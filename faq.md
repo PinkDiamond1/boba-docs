@@ -10,7 +10,7 @@ OMGx is an optimistic rollup that combines the great work done by the [Optimism 
 
 ## Is OMGx a side chain?
 
-Nope. Side chains are their own blockchain systems with entirely separate consensus mechanisms. Optimistic Ethereum lives _inside_ of Ethereum as a series of smart contracts that are capable of executing Ethereum transactions. Whereas side chains rely on their own consensus mechanisms for security, Optimistic Ethereum instead relies on the security of Ethereum itself.
+Nope. Side chains are their own blockchain systems with entirely separate consensus mechanisms. OMGx lives _inside_ of Ethereum as a series of smart contracts that are capable of executing Ethereum transactions. Whereas side chains rely on their own consensus mechanisms for security, OMGx instead relies on the security of Ethereum itself.
 
 ## What's the difference between OMGx and Ethereum?
 
