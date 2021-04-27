@@ -13,7 +13,7 @@ Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereu
 {% hint style="info" %}
 Heads Up
 
-Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/ScopeLift/ovm-uniswap-v2-core) in the GitHub repo for this site.
+Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/omgnetwork/plasma-contracts/issues) in the GitHub repo for this site.
 {% endhint %}
 
 ### For: The Casually Interested Reader <a id="for-the-casually-interested-reader"></a>
