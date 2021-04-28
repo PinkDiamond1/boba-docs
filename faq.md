@@ -24,7 +24,11 @@ Absolutely. Optimistic Rollups are safe as long as Ethereum itself is "live" \(n
 
 ## Is there a delay moving assets from OMGx to Ethereum?
 
-OMGx provides exit liquidity pools and therefore does not have any exit periods unlike other L2 solutions. 
+OMGx provides exit liquidity pools via Quasar and therefore does not have any exit periods unlike other L2 solutions. 
+
+## What is Quasar?
+
+OMGx provides exit liquidity pools via Quasar and therefore does not have any exit periods unlike other L2 solutions. 
 
 ## What are standard changes needed to run on OMGx?
 

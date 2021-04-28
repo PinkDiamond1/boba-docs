@@ -20,7 +20,7 @@ Our documentation is a rapidly improving work in progress. If you have questions
 
 **Are you here because you're interested in Optimistic OMGx at a high-level?**
 
-**We'd recommend starting with the** [**Optimistic Ethereum TL;DR**](https://community.optimism.io/tldr/).
+**We'd recommend starting with the** [**Optimistic Ethereum TL;DR**.](faq.md#what-is-omgx)
 
 It's got a great explanation of the protocol at a high-level. No deep Ethereum experience necessary.
 
