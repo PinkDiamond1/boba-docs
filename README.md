@@ -6,7 +6,9 @@ description: >-
 
 # Welcome to OMGx
 
-OMGx is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGx. OMGx is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net. \[For public test net\] To get started, please[ join our discord](https://omg.eco/support). 
+OMGx is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGx. OMGx is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
+
+[START BUILDING ON OMGx](https://omgnetworkhq.typeform.com/to/L1ZNz0Y2)
 
 Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGx strives to be at the forefront of this evolution.
 
@@ -42,7 +44,7 @@ If you're looking for something else, you may wish to search through our more co
 
 Just want to play with the system?
 
-Something Something Testnet
+_Something Something Testnet_
 
 ### For: Protocol Information <a id="for-protocol-information"></a>
 
