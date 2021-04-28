@@ -13,7 +13,7 @@ Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereu
 {% hint style="info" %}
 Heads Up
 
-Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/omgnetwork/plasma-contracts/issues) in the GitHub repo for this site.
+Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/ScopeLift/ovm-uniswap-v2-core) in the GitHub repo for this site.
 {% endhint %}
 
 ### For: The Casually Interested Reader <a id="for-the-casually-interested-reader"></a>
@@ -34,15 +34,15 @@ Check out this [collection of talks and videos](https://community.optimism.io/do
 
 **Are you a developer who wants to deploy a smart contract to Optimistic OMGx?**
 
-**Take a look at our guide to** [**Building on Optimistic Ethereum**](https://community.optimism.io/docs/developers/integration.html).
+{% page-ref page="developer-docs/porting-solidity-contracts-omgx/" %}
 
-It takes you through the complete process of deploying an application to Optimistic Ethereum. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
+This guide takes you through the complete process of deploying an application to **OMGx**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
-If you're looking for something a else, you may wish to search through our more complete list of [Guides and Resources](https://community.optimism.io/docs/resources/tutorials.html) and catalog of [useful developer tooling](https://community.optimism.io/docs/resources/tooling.html).
+If you're looking for something else, you may wish to search through our more complete list of [Guides and Resources](https://community.optimism.io/docs/resources/tutorials.html) and catalog of [useful developer tooling](developer-docs/tooling.md).
 
 Just want to play with the system?
 
-Try this [straightforward tutorial](https://github.com/ethereum-optimism/optimism-tutorial/blob/main/README.md) that highlights the experience of building on top of Optimistic Ethereum.
+Something Something Testnet
 
 ### For: Protocol Information <a id="for-protocol-information"></a>
 
