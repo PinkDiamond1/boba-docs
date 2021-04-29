@@ -6,9 +6,15 @@ description: >-
 
 # Welcome to OMGx
 
+### What is OMGx?
+
 OMGx is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGx. OMGx is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
 
-[START BUILDING ON OMGx](https://omgnetworkhq.typeform.com/to/L1ZNz0Y2)
+### Get started building on OMGx
+
+{% embed url="https://omgnetworkhq.typeform.com/to/L1ZNz0Y2" %}
+
+
 
 Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGx strives to be at the forefront of this evolution.
 
