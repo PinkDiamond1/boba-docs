@@ -12,7 +12,7 @@ A collection of useful JavaScript/TypeScript tooling plugins that you might need
 
 ### Required tooling 
 
-OMGx as an optimism based Ethereum infrastructure solution relies on [hardhat](https://hardhat.org/). Hardhat automatically compiles your Solidity contracts with the OVM compiler. Defaults to Solidity version 0.7.6, but also has support for 0.5.16 and 0.6.12.
+OMGX as an optimism based Ethereum infrastructure solution relies on [hardhat](https://hardhat.org/). Hardhat automatically compiles your Solidity contracts with the OVM compiler. Defaults to Solidity version 0.7.6, but also has support for 0.5.16 and 0.6.12.
 
 For detailed information refer to the Github repo [here](https://github.com/ethereum-optimism/plugins).
 

@@ -4,13 +4,19 @@ description: >-
   subject matter is unfamiliar. Let's make sure you know where to go next!
 ---
 
-# Welcome to OMGx
+# Welcome to OMGX
 
-OMGx is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGx. OMGx is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
+### What is OMGX?
 
-[START BUILDING ON OMGx](https://omgnetworkhq.typeform.com/to/L1ZNz0Y2)
+OMGX is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGX. OMGX is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
 
-Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGx strives to be at the forefront of this evolution.
+### Get started building on OMGX
+
+{% embed url="https://omgnetworkhq.typeform.com/to/L1ZNz0Y2" %}
+
+
+
+Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
 
 {% hint style="info" %}
 Heads Up
@@ -20,7 +26,7 @@ Our documentation is a rapidly improving work in progress. If you have questions
 
 ### For: The Casually Interested Reader <a id="for-the-casually-interested-reader"></a>
 
-**Are you here because you're interested in Optimistic OMGx at a high-level?**
+**Are you here because you're interested in Optimistic OMGX at a high-level?**
 
 **We'd recommend starting with the** [**Optimistic Ethereum TL;DR**.](faq.md#what-is-omgx)
 
@@ -34,11 +40,11 @@ Check out this [collection of talks and videos](https://community.optimism.io/do
 
 ### For: Developers <a id="for-developers"></a>
 
-**Are you a developer who wants to deploy a smart contract to Optimistic OMGx?**
+**Are you a developer who wants to deploy a smart contract to Optimistic OMGX?**
 
 {% page-ref page="developer-docs/porting-solidity-contracts-omgx/" %}
 
-This guide takes you through the complete process of deploying an application to **OMGx**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
+This guide takes you through the complete process of deploying an application to **OMGX**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
 If you're looking for something else, you may wish to search through our more complete list of [Guides and Resources](https://community.optimism.io/docs/resources/tutorials.html) and catalog of [useful developer tooling](developer-docs/tooling.md).
 
