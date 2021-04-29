@@ -2,7 +2,7 @@
 description: >-
   This guide will walk through the process of porting an existing Solidity
   project to support execution on the Optimism Layer 2 network. For our example
-  codebase, we’ll use the Compound Protocol.
+  codebase, we’ll use the Uniswap Protocol.
 ---
 
 # Porting Solidity Contracts to OMGx
