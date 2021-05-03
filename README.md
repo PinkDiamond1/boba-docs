@@ -42,7 +42,7 @@ Check out this [collection of talks and videos](https://community.optimism.io/do
 
 **Are you a developer who wants to deploy a smart contract to Optimistic OMGX?**
 
-{% page-ref page="developer-docs/porting-solidity-contracts-omgx/" %}
+{% page-ref page="developer-docs/porting-omgx-optimism-case-study.md" %}
 
 This guide takes you through the complete process of deploying an application to **OMGX**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
