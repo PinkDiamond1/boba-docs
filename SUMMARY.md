@@ -4,6 +4,7 @@
 * [FAQ](faq.md)
 * [Developer Docs](developer-docs/README.md)
   * [Tooling](developer-docs/tooling.md)
+  * [Porting to OMGX and Optimism - A case study](developer-docs/porting-omgx-optimism-case-study.md)
   * [Porting Solidity Contracts to OMGX](developer-docs/porting-solidity-contracts-omgx/README.md)
     * [Background](developer-docs/porting-solidity-contracts-omgx/background.md)
     * [Getting Started](developer-docs/porting-solidity-contracts-omgx/getting-started.md)
