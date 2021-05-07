@@ -1,4 +1,4 @@
-# Porting to OMGX and Optimism - A case study
+# Porting SUSHI to OMGX and Optimism
 
 ## SUSHI
 
