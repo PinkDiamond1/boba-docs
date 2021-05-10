@@ -6,9 +6,11 @@ description: OMGX developer documentation
 
 Wondering how to get started porting your solidity contracts over to OMGX? Look no further.
 
+{% page-ref page="case-studies/" %}
+
 {% page-ref page="tooling.md" %}
 
-{% page-ref page="porting-solidity-contracts-omgx/" %}
+ 
 
 
 
