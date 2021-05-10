@@ -1,3 +1,7 @@
+---
+description: Learn how to deploy an existing L1 protocol to OMGX L2
+---
+
 # Porting SUSHI to OMGX and Optimism
 
 ## SUSHI
@@ -20,7 +24,7 @@ Our documentation is a rapidly improving work in progress. If you have questions
 
 ## **1. No native ETH**
 
-In many smart contracts, ETH is handled slightly differently than ERC20 tokens, but on L2, there is no native ETH.Instead, people use an ERC20 representation of ETH such as wETH or oETH. This means that all ETH-specificfunctions can be deleted, since there are no longer needed. For example:
+In many smart contracts, ETH is handled slightly differently than ERC20 tokens, but on L2, there is no native ETH.Instead, people use an ERC20 representation of ETH such as wETH or oETH. This means that all ETH-specific functions can be deleted, since there are no longer needed. For example:
 
 ```text
 contracts/uniswapv2/interfaces/IUniswapV2Router01.sol
