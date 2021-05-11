@@ -8,13 +8,13 @@ description: >-
 
 ### What is OMGX?
 
-OMGX is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGX. OMGX is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
+OMGX is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io/) with the research and development effort of the OMG team on swap-based onramp, fast exit and cross-chain bridging.
+
+We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
 
 ### Get started building on OMGX
 
 {% embed url="https://omgnetworkhq.typeform.com/to/L1ZNz0Y2" %}
-
-
 
 Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
 
@@ -34,7 +34,7 @@ The case studies take you through the complete process of deploying an applicati
 
 ### Useful Links
 
-{% embed url="https://omg.eco/omgx-explorer" caption="OMGX Block Explorer" %}
+{% embed url="https://omg.eco/omgx-explorer-rinkeby" caption="OMGX Rinkeby Block Explorer" %}
 
-{% embed url="https://omg.eco/omgx-wallet" caption="OMGX Web Wallet" %}
+{% embed url="https://omg.eco/omgx-wallet-rinkeby" caption="OMGX Rinkeby Web Wallet" %}
 

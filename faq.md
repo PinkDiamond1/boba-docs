@@ -6,33 +6,27 @@ description: Frequently asked questions to get started on OMGX
 
 ## What is OMGX?
 
-OMGX is an optimistic rollup that combines the great work done by the [Optimism team](https://community.optimism.io) with the research and development effort of the OMG team on fast exits and bridging in order to deliver the best user experience for moving liquidity into and out of OMGX. OMGX is currently available in private test net, and will enter public test net in a few weeks. We are ramping up developer support as quickly as we can to accommodate as many projects as possible on the test net.
+OMGX is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io/) with the research and development effort of the OMG team on swap-based onramp, fast exit and cross-chain bridging.
+
+We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
 
 ## Is OMGX a side chain?
 
-Nope. Side chains are their own blockchain systems with entirely separate consensus mechanisms. OMGX lives _inside_ of Ethereum as a series of smart contracts that are capable of executing Ethereum transactions. Whereas side chains rely on their own consensus mechanisms for security, OMGX instead relies on the security of Ethereum itself.
+OMGX is not a side chain. Side chains are their own blockchain systems with entirely separate consensus mechanisms. OMGX lives _inside_ of Ethereum as a series of smart contracts that are capable of executing Ethereum transactions. Whereas side chains rely on their own consensus mechanisms for security, OMGX, as a child chain, instead relies on the security of Ethereum itself.
 
 ## What's the difference between OMGX and Ethereum?
 
-OMGX is mostly identical to Ethereum. You can create and interact with Solidity smart contracts \(just like you would on Ethereum\) using the same wallet software you're already familiar with. Simply connect your wallet to an Optimistic Ethereum node and you're ready to go!
-
-There are, however, a few very minor differences between Optimistic Ethereum and Ethereum that developers may have to account for. For instance, we disable infrequently used operations like `CALLCODE`. If you're a developer, these differences could potentially require a few minor tweaks to your contract code. Please refer to the [Complete EVM/OVM Comparison](https://community.optimism.io/docs/protocol/evm-comparison.html) for a full list of differences.
+OMGX is mostly identical to Ethereum. You can create and interact with Solidity smart contracts \(just like you would on Ethereum\) using the same wallet software you're already familiar with. 
 
 ## Is OMGX safe?
 
-Absolutely. Optimistic Rollups are safe as long as Ethereum itself is "live" \(not actively censoring transactions\). This security model is backed by a system of "fraud proofs," whereby users are paid to reveal bad transaction results published to the Optimistic Ethereum chain.
+OMGX is just as safe as the Ethereum chain. Optimistic Rollups are safe as long as Ethereum itself is "live" \(not actively censoring transactions\). This security model is backed by a system of "fraud proofs," whereby users are paid to reveal bad transaction results published to the OMGX Optimism based chain.
 
 ## Is there a delay moving assets from OMGX to Ethereum?
 
-OMGX provides exit liquidity pools via Quasar and therefore does not have any exit periods unlike other L2 solutions. 
+Designed with the end users in mind and based on our experience in developing Quasar, the fast-exit option for OMG Plasma, we developed a swap-based mechanism to deliver a smooth user experience for moving funds across chains, whether you are going from L1 to L2, L2 to L1, or between two L2s \(as long as they are both EVM-compatible\). 
 
-## What is Quasar?
-
-OMGX provides exit liquidity pools via Quasar and therefore does not have any exit periods unlike other L2 solutions. 
-
-## What are standard changes needed to run on OMGX?
-
-SELFBALANCE \(=&gt;basically, remove, since no native ETH - treat ETH just like any other ERC20\) and ORIGIN \(`tx.origin` -&gt; `msg.sender`, unless there is a very very good reason for `tx.origin` in which case more complicated
+The users who choose to take advantage of this benefit will pay a small convenience fee that is shared among the liquidity providers of the pools backing the swaps. Acting as liquidity providers as described above is just the first of several staking opportunities we will roll out to the community. The higher level goal is to encourage broad-based participation in the operations and governance of OMGX. As the only tokenized EVM-compatible L2, we are in a unique position to use our token responsibly for the long-term sustainability of the network.
 
 ###  <a id="what-s-the-difference-between-optimistic-ethereum-and-ethereum"></a>
 
