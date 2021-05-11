@@ -19,7 +19,7 @@ We then addressed the warnings and errors one by one.
 {% hint style="info" %}
 Heads Up
 
-Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/ScopeLift/ovm-uniswap-v2-core) in the GitHub repo for this site.
+Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we are actively responding, or [open an issue](https://github.com/omgnetwork) in the GitHub repo for this site.
 {% endhint %}
 
 ## **1. No native ETH**
