@@ -24,7 +24,7 @@ Heads Up
 Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we \(and our awesome community\) are actively responding, or [open an issue](https://github.com/ScopeLift/ovm-uniswap-v2-core) in the GitHub repo for this site.
 {% endhint %}
 
-### For: Developers <a id="for-developers"></a>
+### For Developers <a id="for-developers"></a>
 
 **Are you a developer who wants to deploy a smart contract to OMGX?**
 
