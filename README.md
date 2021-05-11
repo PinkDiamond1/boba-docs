@@ -32,3 +32,9 @@ Our documentation is a rapidly improving work in progress. If you have questions
 
 The case studies take you through the complete process of deploying an application to **OMGX**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
+### Useful Links
+
+{% embed url="https://omg.eco/omgx-explorer" caption="OMGX Block Explorer" %}
+
+{% embed url="https://omg.eco/omgx-wallet" caption="OMGX Web Wallet" %}
+
