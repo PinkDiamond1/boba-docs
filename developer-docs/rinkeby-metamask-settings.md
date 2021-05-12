@@ -21,7 +21,7 @@ description: >-
 ![](../.gitbook/assets/image%20%282%29.png)
 
 {% hint style="info" %}
-Take note, fast on/off-ramps cost a 3% fee as you are taking part in the on/off-ramp liquidity pool
+Take note, fast on/off-ramps cost a 3% fee as you are taking part in the on/off-ramp liquidity pool. In addition there is no native ETH on OMGX, therefore you'll see 'oETH'.
 {% endhint %}
 
 5. Select your desired ETH amount and click deposit
