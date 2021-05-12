@@ -6,4 +6,5 @@
   * [Case Studies](developer-docs/case-studies/README.md)
     * [Porting SUSHI to OMGX](developer-docs/case-studies/porting-sushi-omgx.md)
   * [Tooling](developer-docs/tooling.md)
+  * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
 
