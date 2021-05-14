@@ -6,12 +6,16 @@ description: Learn how to deploy an existing L1 protocol to OMGX L2
 
 ## SUSHI
 
-Sushiswap is a DeFi exchange that supports token swapping and many other actions. We started by copying SUSHI's smart contracts into the `packages/analyzer/contracts` folder. Then, we ran:
+SUSHI is a DeFi exchange that supports token swapping and many other actions. We started by copying SUSHI's smart contracts into the [packages/analyzer/contracts](https://github.com/enyalabs/contracts-analyzer/tree/master/packages/analyzer/contracts) folder. Then, we ran:
 
-```
+```text
 yarn install
+yarn build
 yarn analyze
-yarn compile
+
+yarn deploy:local #may need additional configuration in /scripts/deployLocal.js
+  # or...
+yarn deploy:rinkeby #may need additional configuration in /scripts/deployRinkeby.js
 ```
 
 We then addressed the warnings and errors one by one.
@@ -22,101 +26,88 @@ Heads Up
 Our documentation is a rapidly improving work in progress. If you have questions or feel like something is missing feel free to ask in our [Discord server](https://omg.eco/support) where we are actively responding, or [open an issue](https://github.com/omgnetwork) in the GitHub repo for this site.
 {% endhint %}
 
-## **1. No native ETH**
+### 1. No native ETH
 
-In many smart contracts, ETH is handled slightly differently than ERC20 tokens, but on L2, there is no native ETH.Instead, people use an ERC20 representation of ETH such as wETH or oETH. This means that all ETH-specific functions can be deleted, since there are no longer needed. For example:
+In many smart contracts, ETH is handled slightly differently than ERC20 tokens, but on L2, there is no native ETH. Instead, L2s use an ERC20 representation of ETH such as wETH or oETH. This means that all ETH-specific functions can be deleted, since there are no longer needed. For example:
 
 ```text
-contracts/uniswapv2/interfaces/IUniswapV2Router01.sol
+contracts/uniswapv2/interfaces/IUniswapV2Router01.sol 
 @@ -16,14 +17,15 @@ interface IUniswapV2Router01 {
- ...
- -    function addLiquidityETH(
- -        address token,
- -        uint amountTokenDesired,
- -        uint amountTokenMin,
- -        uint amountETHMin,
- -        address to,
- -        uint deadline
- -    ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
- +    // CHANGE_OMGX
- +    // function addLiquidityETH(
- +    //     address token,
- +    //     uint amountTokenDesired,
- +    //     uint amountTokenMin,
- +    //     uint amountETHMin,
- +    //     address to,
- +    //     uint deadline
- +    // ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
+	...
+-    function addLiquidityETH(
+-        address token,
+-        uint amountTokenDesired,
+-        uint amountTokenMin,
+-        uint amountETHMin,
+-        address to,
+-        uint deadline
+-    ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
++    // CHANGE_OMGX
++    // function addLiquidityETH(
++    //     address token,
++    //     uint amountTokenDesired,
++    //     uint amountTokenMin,
++    //     uint amountETHMin,
++    //     address to,
++    //     uint deadline
++    // ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
 ```
 
-From the UI/Frontend perspective, native ETH functions are no longer needed, and integration test code will also need ETH-specific tests to be commented out. Among other changes, `contracts/mocks/WETH9Mock.sol` can be deleted entirely, and many functions in `contracts/uniswapv2/UniswapV2Router02.sol` can also be deleted completely, such as `removeLiquidityETH` and `swapExactETHForTokens` etc. Removing functions in the contracts also affects the interfaces, of course, ****e.g.`contracts/uniswapv2/interfaces/IUniswapV2Router01.sol.`
+From a UI/Frontend perspective, 'native' ETH functions are no longer needed and integration test code will also need any ETH-specific tests to be commented out. In the case of the SUSHI port, among other changes, `contracts/mocks/WETH9Mock.sol` can be deleted entirely and many functions in `contracts/uniswapv2/UniswapV2Router02.sol` can also be deleted, such as `removeLiquidityETH` and `swapExactETHForTokens` etc. Removing functions in the contracts also affects the interfaces, of course, e.g. `contracts/uniswapv2/interfaces/IUniswapV2Router01.sol`.
 
-## **2. Replace `now` with `block.timestamp`**
+### 2. Timing, `now`, and `block.timestamp`
 
-The L2 does not have traditional blocks and its timing is effectively slaved to L1. Control over time is critical for L2, since during a fraud proof, the L1 contacts will need to replay the L2 contracts at specific times in the past to check their correctness.
+The L2 does not have traditional blocks. Control over time, and manipulation of apparent time, is critical for L2, since during a fraud proof, the L1 contacts will need to replay the L2 contracts at specific times _in the past_ to check their correctness. `block.timestamp` returns the last L1 block in which a rollup batch was posted. This means that the `block.timestamp` returned on L2 can lag as many as 10 minutes behind L1. Depending on how `block.timestamp` is being used, this 1-10 min lag could have **serious unexpected implications**. See [OVM-vs-EVM-Block-Timestamps](https://hackmd.io/@scopelift/Hy853dTsP#OVM-vs-EVM-Block-Timestamps) for a more extensive discussion. Briefly, consider:
 
-```text
-contracts/SushiToken.sol
-@@ -118,7 +118,9 @@ contract SushiToken is ERC20("SushiToken", "SUSHI"), Ownable { 
-    ...
--   require(now <= expiry, "SUSHI::delegateBySig: signature expired");
-+   require(block.timestamp <= expiry, "SUSHI::delegateBySig: signature expired");
-```
+1. The OVM timestamp lags behind the EVM, so it’s possible that e.g. OVM trades execute up 10 minutes after your specified deadline.
+2. `permit` method signatures contain a deadline, and the approval must be sent before that deadline. In certain cases, the approval could take place after the deadline.
+3. Bid and auction durations. If you are trying to run an auction with minute scale bid durations, then a 1-10 minute lag relative to L1 could throw that off completely.
 
-## **3.** Replace `chainid()` with `uint256 chainId =` _`_`_
+### 3. Replace `chainid()` with `uint256 chainId = ___`
 
 ```text
 contracts/SushiToken.sol
 @@ -239,8 +241,8 @@ contract SushiToken is ERC20("SushiToken", "SUSHI"), Ownable {
- ...
-function getChainId() internal pure returns (uint) {
+	...
+    function getChainId() internal pure returns (uint) {
 -       uint256 chainId;
-+       uint256 chainId = 420; //or whatever the L2 ChainID is...
++       uint256 chainId = 28; //or whatever the L2 ChainID is...
 +       //assembly { chainId := chainid() }
 ```
 
-## **4.** Replace `external view` with `external`
-
-```text
-contracts/interfaces/IRewarder.sol
-@@ -5,5 +5,6 @@ import "@boringcrypto/boring-solidity/contracts/libraries/BoringERC20.sol";
- ...
--   function pendingTokens(uint256 pid, address user, uint256 sushiAmount) external view returns ...
-+   function pendingTokens(uint256 pid, address user, uint256 sushiAmount) external returns ...
-
-also needed in
-
-contracts/mocks/ComplexRewarder.sol
-contracts/mocks/ComplexRewarderTime.sol
-contracts/mocks/RewarderBrokenMock.sol
-contracts/mocks/RewarderMock.sol 
-```
-
-## **5.** Update Depreciated Syntax
+### 4. Update Depreciated Syntax
 
 Not strictly L2 related, but updated it to help with future maintainability.
 
 ```text
-contracts/governance/Timelock.sol
+contracts/governance/Timelock.sol 
 -   (bool success, bytes memory returnData) = target.call.value(value)(callData);
 +   (bool success, bytes memory returnData) = target.call{value:value}(callData);
 
 // The following syntax is deprecated: 
 // f.gas(...)(), f.value(...)() and (new C).value(...)().
 // Replace with:
-// f{gas: ..., value: ...}() and (new C){value: ...}().
+// f{gas: ..., value: ...}() and (new C){value: ...}(). 
 ```
 
-## **6.** No tx.origin
+### 5. No tx.origin
 
-L2 does not support `tx.origin`. **CAUTION New code is needed here to prevent flash-loan exploits CAUTION**. For now, we just commented out the require.
+L2 does not support `tx.origin`. This is typically a non-issue, since `tx.origin` is deprecated anyway and will be removed from L1 at some point. See [Vitalik's answer](https://ethereum.stackexchange.com/questions/196/how-do-i-make-my-dapp-serenity-proof). Secondly, only allowing txs from an EOA is considered an anti-pattern. It breaks composability, it prevents multisig wallets from using your product, and in general it's probably a hack to cover up some underlying security issues in the contracts. There is no easy/obvious one-line replacement for `tx.origin` - any attempt to try to detect the codesize or something of the calling contract would be spoofable. For Compound's use of `msg.sender == tx.origin`, as for Sushi, the best approach is to remove that restriction and make sure the contracts can safely handle calls from other contracts \(which involves writing new code\). For now, we just commented out the `require`.
 
 ```text
 contracts/SushiMaker.sol
     // Try to make flash-loan exploit harder to do by only allowing externally owned addresses.
-    -   require(msg.sender == tx.origin, "SushiMaker: must use EOA");
-    +   //require(msg.sender == tx.origin, "SushiMaker: must use EOA");
+-   require(msg.sender == tx.origin, "SushiMaker: must use EOA");
++   //require(msg.sender == tx.origin, "SushiMaker: must use EOA");
 ```
 
-That's it!
+### 6. TESTS RESULTS: All good EXCEPT evm\_increaseTime and evm\_mine
+
+All tests clear EXCEPT things related to `evm_increaseTime` and `evm_mine`. Note that this does not affect the contracts _per se_ but affects testing.
+
+```text
+
+//working on this now...
+const { latest, duration, increase } = require('./utilities/time');
+```
 
