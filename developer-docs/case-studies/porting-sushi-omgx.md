@@ -6,7 +6,7 @@ description: Learn how to deploy an existing L1 protocol to OMGX L2
 
 ## SUSHI
 
-SUSHI is a DeFi exchange that supports token swapping and many other actions. We started by copying SUSHI's smart contracts into the [packages/analyzer/contracts](https://github.com/enyalabs/contracts-analyzer/tree/master/packages/analyzer/contracts) folder. Then, we ran:
+SUSHI is a DeFi exchange that supports token swapping and many other actions. We started by copying SUSHI's smart contracts into the [packages/analyzer/contracts](https://github.com/omgnetwork/omgx_contracts-analyzer/tree/main/contracts) folder. Then, we ran:
 
 ```text
 yarn install
