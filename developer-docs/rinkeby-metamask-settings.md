@@ -41,16 +41,16 @@ Take note, fast on/off-ramps cost a 3% fee as you are taking part in the on/off-
 {% hint style="info" %}
 For work on Rinkeby L1, chose _MetaMask&gt;Networks&gt;Rinkeby Test Network_.
 
-For work on the OMGX Rinkeby L2, chose _MetaMask&gt;Networks&gt;Custom RPC_ and enter `http://rinkeby.omgx.network` with a ChainID of 28.
+For work on the OMGX Rinkeby L2, chose _MetaMask&gt;Networks&gt;Custom RPC_ and enter `https://rinkeby.omgx.network` with a ChainID of 28.
 
 You can seamlessly switch between the two chains.
 {% endhint %}
 
 #### How to manually add the OMGX L2 Provider
 
-* For work on the OMGX Rinkeby L2, chose **MetaMask&gt;Networks&gt;Custom RPC** and enter `http://rinkeby.omgx.network` with a ChainID of 28.
+* For work on the OMGX Rinkeby L2, chose **MetaMask&gt;Networks&gt;Custom RPC** and enter `https://rinkeby.omgx.network` with a ChainID of 28.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 Hit save and wait a few seconds.
 
