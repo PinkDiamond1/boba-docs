@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to OMGX Optimistic Rollup](README.md)
+* [OMGX Optimistic Rollup](README.md)
 * [FAQ](faq.md)
 * [Developer Docs](developer-docs/README.md)
   * [Case Studies](developer-docs/case-studies/README.md)
@@ -8,4 +8,6 @@
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
   * [Tooling](developer-docs/tooling.md)
   * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
+* [Telegram Support](https://omgx.network/support)
+* [Discord Support](https://omg.eco/discord)
 
