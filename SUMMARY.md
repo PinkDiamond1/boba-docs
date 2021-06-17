@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to OMGX](README.md)
+* [Welcome to OMGX Optimistic Rollup](README.md)
 * [FAQ](faq.md)
 * [Developer Docs](developer-docs/README.md)
   * [Case Studies](developer-docs/case-studies/README.md)
