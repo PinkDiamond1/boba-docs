@@ -40,17 +40,11 @@ These case studies take you through the complete process of deploying an applica
 * [5. No tx.origin](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#6-no-txorigin)
 * [6. TEST RESULTS: evm\_increaseTime and evm\_mine](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#7-tests-results--all-good-except-evm-increasetime-and-evm-mine---workaround-pending)
 
-### **OMGX General Documentation**
-
-[Welcome](https://docs.omgx.network/)  
-[Developer Docs](https://docs.omgx.network/developer-docs)  
-[Rinkeby Testnet Addresses](https://docs.omgx.network/developer-docs/rinkeby-testnet-addresses)  
-[Rinkeby Metamask Settings](https://docs.omgx.network/developer-docs/rinkeby-metamask-settings)  
-[FAQ](https://docs.omgx.network/faq)
-
 ### **Services**
 
 [Rinkeby Testnet](https://rinkeby.omgx.network/)  
+[Rinkeby Testnet Addresses](https://docs.omgx.network/developer-docs/rinkeby-testnet-addresses)  
+[Rinkeby Metamask Settings](https://docs.omgx.network/developer-docs/rinkeby-metamask-settings)  
 [Block Explorer Rinkeby](https://omg.eco/omgx-explorer-rinkeby)  
 [Web Wallet Rinkeby](https://omg.eco/omgx-wallet-rinkeby)
 
