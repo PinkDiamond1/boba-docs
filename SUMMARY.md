@@ -8,6 +8,6 @@
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
   * [Tooling](developer-docs/tooling.md)
   * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
-* [Telegram Support](https://omgx.network/support)
+* [Telegram Support](https://t.me/omgxsupport)
 * [Discord Support](https://omg.eco/discord)
 
