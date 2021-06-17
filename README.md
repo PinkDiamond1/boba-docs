@@ -45,7 +45,6 @@ These case studies take you through the complete process of deploying an applica
 [Welcome](https://docs.omgx.network/)  
 [Developer Docs](https://docs.omgx.network/developer-docs)  
 [Rinkeby Testnet Addresses](https://docs.omgx.network/developer-docs/rinkeby-testnet-addresses)  
-[Tooling](https://www.notion.so/Tooling-74c8839afa7047c8b09fa012a4ed86cb)  
 [Rinkeby Metamask Settings](https://docs.omgx.network/developer-docs/rinkeby-metamask-settings)  
 [FAQ](https://docs.omgx.network/faq)
 
