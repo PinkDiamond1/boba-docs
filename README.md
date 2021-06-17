@@ -60,8 +60,3 @@ These case studies take you through the complete process of deploying an applica
 
 Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
 
-### Podcasts, Blogs, Articles
-
-[OMGX: Press Release](https://www.notion.so/OMGX-Press-Release-8bb1c6d7005642d18e7d074b87c9d16d)  
-[OMGX: Scaling and Augmenting Ethereum](https://www.notion.so/OMGX-Scaling-and-Augmenting-Ethereum-0d4e0db8610842b78a749fff65c8548f)
-
