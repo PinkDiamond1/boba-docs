@@ -29,8 +29,6 @@ These examples take you through the complete process of deploying an application
 
 [Start up a local OMGX system](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
 
-Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
-
 #### [Case Study: Porting to OMGX and Optimism](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
 
 * [SUSHI](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#sushi)
@@ -49,6 +47,8 @@ Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereu
 [Rinkeby Metamask Settings](https://docs.omgx.network/developer-docs/rinkeby-metamask-settings)  
 [Block Explorer Rinkeby](https://omg.eco/omgx-explorer-rinkeby)  
 [Web Wallet Rinkeby](https://omg.eco/omgx-wallet-rinkeby)
+
+Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
 
 ### \*\*\*\*
 
