@@ -29,7 +29,7 @@ These examples take you through the complete process of deploying an application
 
 [Start up a local OMGX system](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
 
-#### [Case Study: Porting to OMGX and Optimism](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
+### [Case Study: Porting to OMGX and Optimism](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
 
 * [SUSHI](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#sushi)
 * [0. Basics](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#0-basics)
