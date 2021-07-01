@@ -17,17 +17,19 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 **Do you want to deploy your smart contracts to an Optimistic Rollup?**
 
-#### [Contract Analyzer](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
+#### Choose your deployment stack
 
-* [Prerequisites](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#prerequisites)
-* [Setting Up](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#setting-up)
-* [Add Contracts](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#add-contracts)
-* [Notes](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#notes)
-* [Deploying Contracts to LOCAL L2](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#deploying-contracts-to-local-l2)
-* [Deploying Contracts to OMGX RINKEBY](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#deploying-contracts-to-omgx-rinkeby)
-* [Test](https://github.com/omgnetwork/optimism/tree/develop/omgx_utilities/contracts-analyzer#test)
+* [Truffle Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/truffle)
+* [Waffle Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/waffle)
+* [Hardhat Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
 
-These case studies take you through the complete process of deploying an application to **Optimistic Rollups**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
+These examples take you through the complete process of deploying an application to **Optimistic Rollups**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
+
+### **Local OMGX**
+
+[Start up a local OMGX system](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
+
+Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
 
 #### [Case Study: Porting to OMGX and Optimism](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
 
@@ -48,9 +50,5 @@ These case studies take you through the complete process of deploying an applica
 [Block Explorer Rinkeby](https://omg.eco/omgx-explorer-rinkeby)  
 [Web Wallet Rinkeby](https://omg.eco/omgx-wallet-rinkeby)
 
-### **Local OMGX**
-
-[Typescript based integration test repo for OMGX](https://github.com/omgnetwork/omgx_integration)
-
-Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
+### \*\*\*\*
 
