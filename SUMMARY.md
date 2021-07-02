@@ -6,6 +6,7 @@
   * [Local OMGX](developer-docs/local-omgx.md)
   * [Tooling](developer-docs/tooling/README.md)
     * [Truffle Tutorial](developer-docs/tooling/truffle-tutorial.md)
+    * [Waffle Tutorial](developer-docs/tooling/waffle-tutorial.md)
   * [Case Studies](developer-docs/case-studies/README.md)
     * [Porting SUSHI to OMGX](developer-docs/case-studies/porting-sushi-omgx.md)
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
