@@ -10,11 +10,13 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 Wondering how to get started porting your solidity contracts over to OMGX? [Contact our migration team](https://t.me/omgxsupport) and we'll get you started!
 
+{% page-ref page="local-omgx.md" %}
+
+{% page-ref page="examples/" %}
+
 {% page-ref page="case-studies/" %}
 
 {% page-ref page="rinkeby-testnet-addresses.md" %}
-
-{% page-ref page="examples/" %}
 
 {% page-ref page="rinkeby-metamask-settings.md" %}
 
