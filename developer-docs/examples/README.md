@@ -2,7 +2,7 @@
 description: Migrate code quicker with the right tooling support
 ---
 
-# Tooling
+# Examples
 
 {% page-ref page="truffle-tutorial.md" %}
 
