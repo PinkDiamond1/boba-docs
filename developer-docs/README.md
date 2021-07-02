@@ -14,7 +14,7 @@ Wondering how to get started porting your solidity contracts over to OMGX? [Cont
 
 {% page-ref page="rinkeby-testnet-addresses.md" %}
 
-{% page-ref page="tooling.md" %}
+{% page-ref page="tooling/" %}
 
 {% page-ref page="rinkeby-metamask-settings.md" %}
 
