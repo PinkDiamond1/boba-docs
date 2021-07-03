@@ -1,5 +1,7 @@
 ---
-description: Migrate code quicker with the right tooling support
+description: >-
+  Learn how to deploy your smart contracts to the OMGX L2 using your favorite
+  stack.
 ---
 
 # Examples
