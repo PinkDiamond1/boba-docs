@@ -14,13 +14,13 @@ To retrieve L2 oETH balance:
 this.provider.getBalance(address).
 ```
 
-To retrieve ERC20 tokens, use abi from the L2StandardERC20 contracts and run
+To retrieve ERC20 tokens, use abi from the `L2StandardERC20` contracts and run
 
 ```text
 ERC20Contract.balanceOf(address)
 ```
 
-
+Refer to the full `getBalances` documentation below:
 
 ```text
  async getBalances () {
