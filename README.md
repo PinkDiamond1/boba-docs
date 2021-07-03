@@ -19,26 +19,23 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 #### Choose your deployment stack
 
-* [Truffle Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/truffle)
-* [Waffle Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/waffle)
-* [Hardhat Deployment](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
+{% page-ref page="developer-docs/examples/truffle-tutorial.md" %}
+
+{% page-ref page="developer-docs/examples/waffle-tutorial.md" %}
+
+#### Fix possible errors step by step
+
+{% page-ref page="developer-docs/examples/compiling-ovm.md" %}
 
 These examples take you through the complete process of deploying an application to **Optimistic Rollups**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
-### **Local OMGX**
+### Start up a local OMGX
 
-[Start up a local OMGX system](https://github.com/omgnetwork/optimism/tree/develop/examples/hardhat)
+{% page-ref page="developer-docs/local-omgx.md" %}
 
-### [Case Study: Porting to OMGX and Optimism](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md)
+### **Access OMGX Wallet Contracts\|**
 
-* [SUSHI](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#sushi)
-* [0. Basics](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#0-basics)
-* [1. No native ETH](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#1-no-native-eth)
-* [2. Timing, `now`, and `block.timestamp`](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#2-timing---now---and--blocktimestamp)
-* [3. Replace `chainid()` with `uint256 chainId = ___`](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#3-replace--chainid----with--uint256-chainid)
-* [4. Update Depreciated Syntax](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#5-update-depreciated-syntax)
-* [5. No tx.origin](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#6-no-txorigin)
-* [6. TEST RESULTS: evm\_increaseTime and evm\_mine](https://github.com/omgnetwork/optimism/blob/develop/omgx_utilities/contracts-analyzer/PORTING.md#7-tests-results--all-good-except-evm-increasetime-and-evm-mine---workaround-pending)
+{% page-ref page="developer-docs/omgx-wallet-contracts.md" %}
 
 ### **Services**
 
@@ -49,6 +46,4 @@ These examples take you through the complete process of deploying an application
 [Web Wallet Rinkeby](https://omg.eco/omgx-wallet-rinkeby)
 
 Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
-
-### \*\*\*\*
 
