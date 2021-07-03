@@ -4,6 +4,8 @@
 
 Hi there! Welcome to our Optimistic Ethereum ERC20 Waffle example!
 
+You can find the repo with all working Waffle examples [here](https://github.com/omgnetwork/optimism/tree/develop/examples/waffle)
+
 If you're interested in writing your first L2-compatible smart contract using Waffle as your smart contract testing framework, then you've come to the right place! This repo serves as an example for how go through and compile & test your contracts on both Ethereum and Optimistic Ethereum.
 
 Let's begin!
