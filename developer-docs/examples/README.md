@@ -8,6 +8,8 @@ description: Migrate code quicker with the right tooling support
 
 {% page-ref page="waffle-tutorial.md" %}
 
+{% page-ref page="compiling-for-ovm.md" %}
+
 
 
 
