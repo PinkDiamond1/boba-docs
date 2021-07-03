@@ -14,6 +14,8 @@ Wondering how to get started porting your solidity contracts over to OMGX? [Cont
 
 {% page-ref page="examples/" %}
 
+{% page-ref page="omgx-wallet-contracts.md" %}
+
 {% page-ref page="case-studies/" %}
 
 {% page-ref page="rinkeby-testnet-addresses.md" %}
