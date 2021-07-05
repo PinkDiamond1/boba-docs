@@ -1,5 +1,7 @@
 ---
-description: Learn how to interface with the OMGX wallet contracts to retrieve user data.
+description: >-
+  Learn how to interface with the OMGX wallet contracts to retrieve on-chain
+  data.
 ---
 
 # OMGX Wallet Contracts
