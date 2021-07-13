@@ -92,6 +92,8 @@ contracts/governance/Timelock.sol
 
 ### 5. No tx.origin
 
+See our recommendation for `tx.origin` [here](https://docs.omgx.network/developer-docs/examples/compiling-ovm#5-no-tx-origin)
+
 L2 does not support `tx.origin`. This is typically a non-issue, since `tx.origin` is deprecated anyway and will be removed from L1 at some point. See [Vitalik's answer](https://ethereum.stackexchange.com/questions/196/how-do-i-make-my-dapp-serenity-proof). Secondly, only allowing txs from an EOA is considered an anti-pattern. It breaks composability, it prevents multisig wallets from using your product, and in general it's probably a hack to cover up some underlying security issues in the contracts. There is no easy/obvious one-line replacement for `tx.origin` - any attempt to try to detect the codesize or something of the calling contract would be spoofable. For Compound's use of `msg.sender == tx.origin`, as for Sushi, the best approach is to remove that restriction and make sure the contracts can safely handle calls from other contracts \(which involves writing new code\). For now, we just commented out the `require`.
 
 ```text
