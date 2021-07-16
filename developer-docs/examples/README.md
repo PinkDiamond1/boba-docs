@@ -10,9 +10,9 @@ description: >-
 
 {% page-ref page="waffle-tutorial.md" %}
 
+{% page-ref page="hardhat-tutorial.md" %}
+
 {% page-ref page="compiling-ovm.md" %}
-
-
 
 
 
