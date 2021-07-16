@@ -1,3 +1,9 @@
+---
+description: >-
+  Learn how to run a node to generate analytics data for data services like
+  Etherscan and the Graph
+---
+
 # Run a Community Verifier
 
 ## Community Verifier Service

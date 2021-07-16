@@ -1,3 +1,7 @@
+---
+description: Learn how to run an OMGX replica to generate ground truth state roots
+---
+
 # Run a Community Replica
 
 ## Community Replica Service
