@@ -11,6 +11,8 @@
   * [OMGX Wallet Contracts](developer-docs/omgx-wallet-contracts.md)
   * [Case Studies](developer-docs/case-studies/README.md)
     * [Porting SUSHI to OMGX](developer-docs/case-studies/porting-sushi-omgx.md)
+  * [Run a Community Verifier](developer-docs/run-a-community-verifier.md)
+  * [Run a Community Replica](developer-docs/run-a-community-replica.md)
   * [OMGX Token Addresses](developer-docs/token-addresses.md)
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
   * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
