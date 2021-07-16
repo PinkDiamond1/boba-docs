@@ -6,6 +6,7 @@
   * [Examples](developer-docs/examples/README.md)
     * [Truffle Tutorial](developer-docs/examples/truffle-tutorial.md)
     * [Waffle Tutorial](developer-docs/examples/waffle-tutorial.md)
+    * [Hardhat Tutorial](developer-docs/examples/hardhat-tutorial.md)
     * [Compiling for OVM](developer-docs/examples/compiling-ovm.md)
     * [The Graph](developer-docs/examples/the-graph.md)
   * [OMGX Wallet Contracts](developer-docs/omgx-wallet-contracts.md)
