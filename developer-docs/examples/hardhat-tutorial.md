@@ -89,11 +89,13 @@ To solve this problem:
 2. Edit your contracts to change the `pragma solidity` line to the supported version.
 3. Check the application still works on normal Ethereum.
 
-   ```text
-   npx hardhat test
-   ```
+Running into other issues? Check our OVM compilation guide [here](compiling-ovm.md).
 
-4. Check the application works on OMGX.
+```text
+npx hardhat test
+```
+
+1. Check the application works on OMGX.
 
    ```text
    npx hardhat --network optimism test
