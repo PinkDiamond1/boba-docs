@@ -20,7 +20,9 @@ Gas is paid in ETH.
 
 ### How is that fee calculated?
 
-`estimatedGasLimit = calculateL1GasLimit(data)`  _`L1GasFee + L2GasPrice *`_ `L2estimateExecutionGas`
+`gasFee = gasPrice * gasLimit`
+
+`estimatedGasLimit = calculateL1gaslimit (data) * L1GasFee + L2GasPrice * L2estimateExecutionGas`
 
 ### How do I get ETH?
 
