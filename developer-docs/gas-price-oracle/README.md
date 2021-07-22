@@ -1,3 +1,7 @@
+---
+description: Learn about the OMGX L2 gas oracle algorithm
+---
+
 # Gas Price Oracle
 
 This service is responsible for updating the `gasPrice` in the `OVM_GasPriceOracle.sol` contract, so the Sequencer can fetch the latest `gasPrice` and update the L2 gas price over time.
