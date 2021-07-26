@@ -1,3 +1,7 @@
+---
+description: Learn how bridging assets between Ethereum L1 and OMGX L2 works.
+---
+
 # Bridging L1 and L2
 
 Apps on OMGX can be made to interact with apps on Ethereum via a process called "bridging". In a nutshell, **contracts on OMGX can send messages to contracts on Ethereum, and vice versa**.
