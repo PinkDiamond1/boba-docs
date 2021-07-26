@@ -40,7 +40,7 @@ Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgn
          accounts: {
            mnemonic: 'test test test test test test test test test test test junk'
          },
-         gasLimit: 6400000,
+         gasPrice: 15000000,
          ovm: true // This sets the network as using the ovm and ensure contract will be compiled against that.
        },
      },

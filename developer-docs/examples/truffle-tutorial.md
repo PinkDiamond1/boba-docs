@@ -60,7 +60,7 @@ module.exports = {
       network_id: 28,
       host: '127.0.0.1',
       port: 8545,
-      gasLimit: 6400000,
+      gasPrice: 15000000,
     }
   },
   compilers: {
@@ -137,7 +137,7 @@ module.exports = function (deployer, accounts) {
     tokenName, 
     tokenDecimals, 
     tokenSymbol,
-    { gasPrice: 0 }
+    {gasLimit: 6400000}
   )
 }
 ```
