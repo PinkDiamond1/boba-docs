@@ -54,9 +54,9 @@ contract MyOtherContract {
 ```
 
 {% hint style="info" %}
-Using the messenger contracts
+**Using the messenger contracts**
 
-These messenger contracts, the`OVM_L1CrossDomainMessenger, OVM_L2CrossDomainMessenger, OVM_L1CrossDomainMessengerFast` always come pre-deployed to each of our networks. You can find the exact addresses of these contracts on our various deployments [inside of the OMGX repo](https://github.com/omgnetwork/optimism)
+These messenger contracts`OVM_L1CrossDomainMessenger, OVM_L2CrossDomainMessenger, OVM_L1CrossDomainMessengerFast` always come pre-deployed to each of our networks. You can find the exact addresses of these contracts on our various deployments [inside of the OMGX repo](https://github.com/omgnetwork/optimism)
 {% endhint %}
 
 ### Caveats
