@@ -102,5 +102,18 @@ npx hardhat test
 
 As you may have noticed, in this tutorial we ran all the tests first on the HardHat EVM and only then on Optimistic Ethereum. This is important, because it lets you isolate contract problems from problems that are the result of using Optimistic Ethereum rather than vanilla Ethereum.
 
+### Deployment
+
+In the `hardhat.config` \(or equivalent\) set gasPrice: `gasPrice: 15000000` and in function calls, specify your gasLimit, such as:  
+
+
+```text
+const tx1 = await ERC20.connect(account1).approve(
+        await account2.getAddress(),
+        INITIAL_SUPPLY,
+        {gasLimit: 6400000}
+      )
+```
+
 ### 
 
