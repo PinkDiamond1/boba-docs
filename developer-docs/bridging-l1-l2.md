@@ -92,7 +92,7 @@ modifier onlyOwner() {
 One of the most important things to understand about L1 ⇔ L2 interaction is that **messages sent from Layer 2 to Layer 1 cannot be relayed for at least one week, unless you use the OMGX Fast Exit Liquidity Pool.** The fast-exit liquidity pool makes use of our custom `OVM_L1CrossDomainMessengerFast` and enables near instant withdrawals from L2 ⇔ L1. If you decide to opt out of using the LP, messages you send from Layer 2 will only be received on Layer 1 after this one week period has elapsed. We call this period of time the "challenge period" because it's a result of one of the core security mechanisms of the Optimistic Rollup: the transaction result challenge.
 
 {% hint style="info" %}
-`OMGX charges a small convenience fee for making use of the fast-exit liquidity pool. Any associated risks of removing the 7 day challenge period only apply to the liquidity pool users.`
+OMGX charges a small convenience fee for making use of the fast-exit liquidity pool. Any associated risks of removing the 7 day challenge period only apply to the liquidity pool users.
 {% endhint %}
 
 Optimistic Rollups are "optimistic" because they're based around the idea of publishing the _result_ of a transaction to Ethereum without actually executing the transaction on Ethereum. In the "optimistic" case, this transaction result is correct and we can completely avoid the need to perform complicated \(and expensive\) logic on Ethereum. 
