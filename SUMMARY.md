@@ -14,6 +14,7 @@
     * [Porting SUSHI to OMGX](developer-docs/case-studies/porting-sushi-omgx.md)
   * [Gas Price Oracle](developer-docs/gas-price-oracle/README.md)
     * [Gas Price User Guide](developer-docs/gas-price-oracle/gas-price-user-guide.md)
+  * [Bridging L1 and L2](developer-docs/bridging-l1-l2.md)
   * [Run a Community Verifier](developer-docs/run-a-community-verifier.md)
   * [Run a Community Replica](developer-docs/run-a-community-replica.md)
   * [OMGX Token Addresses](developer-docs/token-addresses.md)
