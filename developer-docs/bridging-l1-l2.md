@@ -103,7 +103,7 @@ If someone successfully executes this challenge, then the result is scrubbed fro
 
 #### On the length of the challenge period
 
-We've set the challenge period to be exactly seven days on the OMGX mainnet. We believe this is a reasonable balance between security and usability, with an emphasis on increased security to start. 
+We've set the challenge period for standard withdrawals to be exactly seven days on the OMGX mainnet. If you prefer near instant withdrawals, you can make use of the LP token bridge explained below.
 
 ### Token Bridges <a id="understanding-the-challenge-period"></a>
 
