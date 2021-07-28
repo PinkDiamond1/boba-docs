@@ -105,3 +105,23 @@ If someone successfully executes this challenge, then the result is scrubbed fro
 
 We've set the challenge period to be exactly seven days on the OMGX mainnet. We believe this is a reasonable balance between security and usability, with an emphasis on increased security to start. 
 
+### Token Bridges <a id="understanding-the-challenge-period"></a>
+
+Certain interactions, like transferring ETH and ERC20 tokens between the two networks, are common enough that we've built some standard bridge contracts you can make use of.
+
+#### The Standard Bridge <a id="the-standardtm-bridge"></a>
+
+The Standard Bridge simplifies the process of moving ETH and ERC20 tokens between Optimistic Ethereum and Ethereum and consists of two contracts: [`OVM_L1StandardBridge`](https://github.com/ethereum-optimism/optimism/blob/master/packages/contracts/contracts/optimistic-ethereum/OVM/bridge/tokens/OVM_L1StandardBridge.sol) \(for Layer 1\) and [`OVM_L2StandardBridge`](https://github.com/ethereum-optimism/optimism/blob/master/packages/contracts/contracts/optimistic-ethereum/OVM/bridge/tokens/OVM_L2StandardBridge.sol) \(for Layer 2\).
+
+For an L1/L2 token pair to work on the Standard Bridge the L2 token contract need to implement [`IL2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/master/packages/contracts/contracts/optimistic-ethereum/libraries/standards/IL2StandardERC20.sol). The standard implementation of that is in [`L2StandardERC20`](https://github.com/ethereum-optimism/optimism/blob/master/packages/contracts/contracts/optimistic-ethereum/libraries/standards/L2StandardERC20.sol) contract.
+
+Note that deposits and withdrawals are restricted to EOA accounts only. Contracts can still interact with the bridge but using the explicit `depositETHTo`, `depositERC20To`, `withdrawTo` functions.
+
+Refer to the standard bridge contract [here](%20https://github.com/omgnetwork/optimism/tree/develop/packages/contracts/contracts/optimistic-ethereum/OVM/bridge/tokens)
+
+#### The LP Bridge <a id="the-standardtm-bridge"></a>
+
+As mentioned above, the LP bridge makes use of `OVM_L1CrossDomainMessengerFast`for fast withdrawals from L2 to L1.
+
+Refer to the LP bridge contract [here](https://github.com/omgnetwork/optimism/tree/develop/packages/omgx/contracts/contracts/LP)
+
