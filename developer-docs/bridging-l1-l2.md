@@ -8,7 +8,7 @@ Apps on OMGX can be made to interact with apps on Ethereum via a process called 
 
 ### L1 &lt;&gt; L2 Basics
 
-At a high level, this process is pretty similar to the same process for two contracts on Ethereum \(with a few caveats\). **Communication between L1 and L2 is enabled by two special smart contracts called the "messengers"**. Each layer has its own messenger contract which serves to abstract away some lower-level communication details, a lot like how HTTP libraries abstract away physical network connections.
+At a high level, this process is pretty similar to the same process for two contracts on Ethereum \(with a few caveats\). **Communication between L1 and L2 is enabled by three special smart contracts called the "messengers"**. Each layer has its own messenger contract which serves to abstract away some lower-level communication details, a lot like how HTTP libraries abstract away physical network connections.
 
 We won't get into _too_ much detail about these contracts here — the only thing you really need to know about is the `sendMessage` function attached to each messenger:
 
