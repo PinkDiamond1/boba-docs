@@ -1,5 +1,5 @@
 ---
-description: Learn how bridging assets between Ethereum L1 and OMGX L2 works.
+description: Learn how to bridge assets between Ethereum L1 and OMGX L2.
 ---
 
 # Bridging L1 and L2
