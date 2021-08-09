@@ -23,11 +23,17 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 {% page-ref page="developer-docs/examples/waffle-tutorial.md" %}
 
+{% page-ref page="developer-docs/examples/hardhat-tutorial.md" %}
+
 #### Fix possible errors step by step
 
 {% page-ref page="developer-docs/examples/compiling-ovm.md" %}
 
 These examples take you through the complete process of deploying an application to **Optimistic Rollups**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
+
+### Set up The Graph
+
+{% page-ref page="developer-docs/examples/the-graph.md" %}
 
 ### Start up a local OMGX
 
