@@ -87,6 +87,20 @@ contracts/governance/Timelock.sol
 // f{gas: ..., value: ...}() and (new C){value: ...}(). 
 ```
 
+Example for transferring oETH
+
+```text
+function externalCall(address target, bytes memory callData)
+external
+payable
+{
+    uint256 msgValue = IERC20(0x4200000000000000000000000000000000000006).balanceOf(address(this));
+    IERC20(0x4200000000000000000000000000000000000006).transfer(target,msgValue);
+    (bool success, ) = target.call(callData);
+    require(success, "External Call execution Failed");
+}
+```
+
 ### 5. No tx.origin
 
 One function call that cannot be replicated in the OVM is `tx.origin`. This is because of account abstraction that occurs on layer 2. On layer 2 there is no distinction between wallets and contracts because all accounts get abstracted to a contract. In most use cases this doesn’t matter because the abstraction doesn’t interfere with any of the functionality or interactions of contracts. However, for `tx.origin` this does play a role because there is no “origin” address in L2; it's replaced by a smart contract. So what can you do if you’re using `tx.origin` in your smart contract and still want to develop on OMGX optimism network? No worries, read along we’ve got you covered!
