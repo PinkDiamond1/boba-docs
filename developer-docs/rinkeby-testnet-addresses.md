@@ -1,5 +1,5 @@
 ---
-description: A collection of important OMGX Rinkeby addresses
+description: A collection of important Boba Rinkeby addresses
 ---
 
 # Rinkeby Testnet Addresses

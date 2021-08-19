@@ -39,7 +39,7 @@ contracts/uniswapv2/interfaces/IUniswapV2Router01.sol
 -        address to,
 -        uint deadline
 -    ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
-+    // CHANGE_OMGX
++    // CHANGE_Boba
 +    // function addLiquidityETH(
 +    //     address token,
 +    //     uint amountTokenDesired,
@@ -103,7 +103,7 @@ payable
 
 ### 5. No tx.origin
 
-One function call that cannot be replicated in the OVM is `tx.origin`. This is because of account abstraction that occurs on layer 2. On layer 2 there is no distinction between wallets and contracts because all accounts get abstracted to a contract. In most use cases this doesn’t matter because the abstraction doesn’t interfere with any of the functionality or interactions of contracts. However, for `tx.origin` this does play a role because there is no “origin” address in L2; it's replaced by a smart contract. So what can you do if you’re using `tx.origin` in your smart contract and still want to develop on OMGX optimism network? No worries, read along we’ve got you covered!
+One function call that cannot be replicated in the OVM is `tx.origin`. This is because of account abstraction that occurs on layer 2. On layer 2 there is no distinction between wallets and contracts because all accounts get abstracted to a contract. In most use cases this doesn’t matter because the abstraction doesn’t interfere with any of the functionality or interactions of contracts. However, for `tx.origin` this does play a role because there is no “origin” address in L2; it's replaced by a smart contract. So what can you do if you’re using `tx.origin` in your smart contract and still want to develop on Boba optimism network? No worries, read along we’ve got you covered!
 
 For the most part `tx.origin` should not be used as a security measure because it opens up a contract to phishing attempts from other “malicious” contracts. `Tx.origin` returns the caller of the original transaction no matter what contract is calling on behalf of that origin. This opens up your contract to security vulnerabilities because once you interact with a contract it can then access any other contract that uses `tx.origin` as validation to drain your funds from that contract.
 

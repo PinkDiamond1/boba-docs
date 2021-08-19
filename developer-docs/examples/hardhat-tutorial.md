@@ -2,7 +2,7 @@
 
 ## Getting Started with the Optimistic Ethereum: Simple ERC20 Token Hardhat Tutorial
 
-To start off make sure you have a [local OMGX ](../local-omgx.md)running!
+To start off make sure you have a [local Boba](../local-omgx.md) running!
 
 Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgnetwork/optimism/blob/develop/examples/hardhat/contracts/ERC20.sol).
 
@@ -55,7 +55,7 @@ Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgn
    }
    ```
 
-4. Test the contract on OMGX. Hardhat will recognize it has not been compiled and compile it for you.
+4. Test the contract on Boba. Hardhat will recognize it has not been compiled and compile it for you.
 
    ```text
    npx hardhat --network optimism test
@@ -92,11 +92,11 @@ Running into other issues? Check our OVM compilation guide [here](compiling-ovm.
 npx hardhat test
 ```
 
-1. Check the application works on OMGX.
+1. Check the application works on Boba.
 
-   ```text
-   npx hardhat --network optimism test
-   ```
+```text
+npx hardhat --network optimism test
+```
 
 ### Best Practices for Running Tests
 

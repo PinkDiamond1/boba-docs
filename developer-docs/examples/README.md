@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how to deploy your smart contracts to the OMGX L2 using your favorite
+  Learn how to deploy your smart contracts to the Boba L2 using your favorite
   stack.
 ---
 

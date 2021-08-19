@@ -4,9 +4,9 @@ description: Learn how to connect to the OMGX Rinkeby Graph node
 
 # The Graph
 
-## OMGX Subgraph Example
+## Boba Subgraph Example
 
-### OMGX Graph Node
+### Boba Graph Node
 
 > Rinkeby endpoint: [https://graph.rinkeby.omgx.network](https://graph.rinkeby.omgx.network/)
 

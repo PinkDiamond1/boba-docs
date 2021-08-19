@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how to transact on the OMGX Rinkeby L1 & L2 test net with your Metamask
+  Learn how to transact on the Boba Rinkeby L1 & L2 test net with your Metamask
   wallet
 ---
 

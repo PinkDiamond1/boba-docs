@@ -2,7 +2,7 @@
 description: Learn how to set up a local OMGX system.
 ---
 
-# Local OMGX
+# Local Boba
 
 
 
@@ -15,7 +15,7 @@ description: Learn how to set up a local OMGX system.
     * [Running unit tests](https://github.com/omgnetwork/optimism/blob/develop/README_OMGX.md#running-unit-tests)
     * [Running integration tests](https://github.com/omgnetwork/optimism/blob/develop/README_OMGX.md#running-integration-tests)
 
-## Starting a local basic Optimism L1/L2 with OMGX contracts and services
+## Starting a local basic Optimism L1/L2 with Boba contracts and services
 
 You can change the BUILD and DAEMON values to control if everything is rebuilt \(`BUILD=1`, very slow\), and if you want to see all the debug information \(`DAEMON=0`\)
 

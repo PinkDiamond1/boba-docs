@@ -1,8 +1,16 @@
-# OMGX Optimistic Rollup
+---
+description: Learn how to deploy your smart contracts on the Boba Network OVM
+---
 
-OMGX is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io/) with the research and development effort of the OMG team on swap-based onramp, fast exit and cross-chain bridging. We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
+# Boba Network
 
-OMGX is maintained by the [OMG](https://omg.network) and [Enya](https://enya.ai) teams.
+{% hint style="info" %}
+Hello there, shadowy super coder! Please take note that OMGX Network has rebranded to Boba Network and you might stumble across some old code references to OMGX!
+{% endhint %}
+
+Boba Network is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io/) with the research and development effort of the Enya & Boba team on swap-based onramp, fast exit and cross-chain bridging. We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
+
+Boba is maintained by the [OMG](https://omg.network) and [Enya](https://enya.ai) teams.
 
 {% hint style="info" %}
 Our documentation is a work in progress. If you have questions or feel like something is missing check out our [Discord server](https://omg.eco/support) where we are actively responding, or [open an issue](https://github.com/omgnetwork) in the GitHub repo for this site.
@@ -13,7 +21,7 @@ Our documentation is a work in progress. If you have questions or feel like some
 [Telegram](https://t.me/OMGXsupport)  
 [Discord](https://omg.eco/support)
 
-### Porting to OMGX and Optimism
+### Porting to Boba and Optimism
 
 **Do you want to deploy your smart contracts to an Optimistic Rollup?**
 
@@ -51,5 +59,5 @@ These examples take you through the complete process of deploying an application
 [Block Explorer Rinkeby](https://omg.eco/omgx-explorer-rinkeby)  
 [Web Wallet Rinkeby](https://omg.eco/omgx-wallet-rinkeby)
 
-Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. OMGX strives to be at the forefront of this evolution.
+Looking ahead, we anticipate the need for L2 solutions to not only scale Ethereum, but to augment it by expanding the capabilities of smart contracts through enabling complex off-chain computations. Boba strives to be at the forefront of this evolution.
 

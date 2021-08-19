@@ -1,12 +1,12 @@
 ---
 description: >-
-  Learn how to interface with the OMGX wallet contracts to retrieve on-chain
+  Learn how to interface with the Boba wallet contracts to retrieve on-chain
   data.
 ---
 
-# OMGX Wallet Contracts
+# Boba Wallet Contracts
 
-For the full documentation on how to interact with the OMGX wallet contracts, visit [our Github](https://github.com/omgnetwork/optimism/blob/develop/packages/omgx/wallet-frontend/src/services/networkService.js).
+For the full documentation on how to interact with the Boba wallet contracts, visit [our Github](https://github.com/omgnetwork/optimism/blob/develop/packages/omgx/wallet-frontend/src/services/networkService.js).
 
 ### 1. Get Balances
 
@@ -88,7 +88,7 @@ Refer to the full `getBalances` documentation below:
       }
 ```
 
-### 2. Deposit ETH from L1 to OMGX L2
+### 2. Deposit ETH from L1 to Boba L2
 
 ```text
 depositETHL2 = async (value='1') => {
@@ -117,7 +117,7 @@ depositETHL2 = async (value='1') => {
   }
 ```
 
-### 3. Standard exit from OMGX L2 
+### 3. Standard exit from Boba L2 
 
 ```text
 async exitOMGX(currency, value) {

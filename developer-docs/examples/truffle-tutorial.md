@@ -48,7 +48,7 @@ const HDWalletProvider = require('@truffle/hdwallet-provider')
 module.exports = {
   contracts_build_directory: './build-ovm',
   networks: {
-    omgx: {
+    boba: {
       provider: function () {
         return new HDWalletProvider({
           mnemonic: {
@@ -105,7 +105,7 @@ With your local instance of Optimistic Ethereum up and running, let's test your 
 To do that, run:
 
 ```text
-yarn truffle test ./test/erc20.spec.js --network omgx --config truffle-config-ovm.js
+yarn truffle test ./test/erc20.spec.js --network boba --config truffle-config-ovm.js
 ```
 
 Notice that we are using `truffle-config-ovm.js` to let `truffle` know that we want to use the `build-ovm` folder as our path to our JSON files. \(Remember that these JSON files were compiled using the Optimistic Ethereum solidity compiler!\)
@@ -147,7 +147,7 @@ To quickly explain this file, first we import our artifact for our ERC20 contrac
 Now we're ready to run our migrations file! Let's go ahead and deploy this contract:
 
 ```text
-yarn truffle migrate --network omgx --config truffle-config-ovm.js
+yarn truffle migrate --network boba --config truffle-config-ovm.js
 ```
 
 This should deploy against a local \(in-memory\) Optimistic Ethereum node that was spin up when we started the integrations repo.

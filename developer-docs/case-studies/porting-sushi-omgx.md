@@ -1,8 +1,8 @@
 ---
-description: Learn how to deploy an existing L1 protocol to OMGX L2
+description: Learn how to deploy an existing L1 protocol to Boba L2
 ---
 
-# Porting SUSHI to OMGX
+# Porting SUSHI to Boba
 
 ## SUSHI
 
@@ -42,7 +42,7 @@ contracts/uniswapv2/interfaces/IUniswapV2Router01.sol
 -        address to,
 -        uint deadline
 -    ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
-+    // CHANGE_OMGX
++    // CHANGE_Boba
 +    // function addLiquidityETH(
 +    //     address token,
 +    //     uint amountTokenDesired,
