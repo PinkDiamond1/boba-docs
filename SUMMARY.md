@@ -23,7 +23,7 @@
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
   * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
 * [FAQ](faq.md)
-* [Telegram Support](https://t.me/OMGXsupport)
+* [Telegram Support](https://t.me/bobadev)
 * [Discord Support](https://omg.eco/discord)
 * [GitHub](https://github.com/omgnetwork/optimism)
 
