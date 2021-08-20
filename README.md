@@ -18,7 +18,7 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 ### Direct Support
 
-[Telegram](https://t.me/OMGXsupport)  
+[Telegram](https://t.me/bobadev)  
 [Discord](https://omg.eco/support)
 
 ### Porting to Boba and Optimism
