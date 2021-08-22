@@ -1,5 +1,5 @@
 ---
-description: A collection of important OMGX mainnet addresses
+description: A collection of important Boba mainnet addresses
 ---
 
 # Mainnet Addresses
