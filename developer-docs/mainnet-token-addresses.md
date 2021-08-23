@@ -1,5 +1,5 @@
 ---
-description: List of Boba L1 and L2 token addresses for testing on Mainnet
+description: List of Boba L1 and L2 token addresses on Mainnet
 ---
 
 # Boba Mainnet Token Addresses
