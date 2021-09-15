@@ -1,147 +1,54 @@
 ---
-description: Learn how to connect to the OMGX Rinkeby Graph node
+description: Learn how to connect to the Boba Rinkeby Graph node
 ---
 
 # The Graph
 
-## Boba Subgraph Example
+### Boba Network Bridges Subgraphs
 
-### Boba Graph Node
+These subgraphs index the **StandardBridge** contracts and **LiquidityPool** contracts.
 
-> Rinkeby endpoint: [https://graph.rinkeby.omgx.network](https://graph.rinkeby.omgx.network/)
+### Requirements
 
-| **Port** | **Purpose** | **Routes** | URL | **Permission** |
-| :--- | :--- | :--- | :--- | :--- |
-| 8000 | GraphQL HTTP server | /subgraphs/name/.../... | [https://graph.rinkeby.omgx.network](https://graph.rinkeby.omgx.network/) [https://graph.rinkeby.omgx.network:8000](https://graph.rinkeby.omgx.network:8000/) | Public |
-| 8001 | GraphQL WS | /subgraphs/name/.../... | [https://graph.rinkeby.omgx.network:8001](https://graph.rinkeby.omgx.network:8001/) | Public |
-| 8020 | JSON-RPC \(for managing deployments\) | / | [https://graph.rinkeby.omgx.network:8020](https://graph.rinkeby.omgx.network:8020/) | Private |
-| 8030 | Subgraph indexing status API | /graphql | [https://graph.rinkeby.omgx.network:8030](https://graph.rinkeby.omgx.network:8030/) | Public |
-| 8040 | Prometheus metrics | /metrics | [https://graph.rinkeby.omgx.network:8040](https://graph.rinkeby.omgx.network:8040/) | Public |
-
-### Deploy Subgraph to OMGX Graph Node
-
-#### Dependencies
-
-You'll need the following:
-
-* [Git](https://git-scm.com/downloads)
-* [NodeJS](https://nodejs.org/en/download/)
-* [Yarn](https://classic.yarnpkg.com/en/docs/install)
-* [Docker](https://docs.docker.com/get-docker/)
-* [Docker Compose](https://docs.docker.com/compose/install/)
-
-#### Setup
-
-Clone the the example repository, open it, and install nodejs packages with `yarn`:
+The global graph is required to deploy to **The Graph Node**.
 
 ```text
-git clone git@github.com:omgnetwork/omgx_subgraph-example.git
-cd omgx_subgraph-example
-cd omgx-contract
+npm install -g @graphprotocol/graph-cli
+```
+
+### Building & Running
+
+#### L1 Subgraphs
+
+The deploy key is required to deploy subgraphs to **The Graph Node**.
+
+```text
+graph auth  --studio $DEPLOY_KEY
 yarn install
-```
-
-Copy the contract **abi** file into `omgx-contract/abis`.
-
-#### Update `subgraph.yml`
-
-The standard `subgraph.yml` is
-
-```text
-specVersion: 0.0.2
-description: TokenPool for OMGX
-repository: https://github.com/omgnetwork/omgx_subgraph-example
-schema:
-  file: ./schema.graphql
-dataSources:
-  - kind: ethereum/contract
-    name: TokenPool # Contract name
-    network: omgx  # Don't change if you want to deploy to OMGX
-    source:
-      address: '0x82B178EE692572e21D73d5F1ebC1c7c438Fc52DD' # Contract address
-      abi: TokenPool # Contract name
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      entities:
-        - TokenPool # Contract name
-      abis:
-        - name: TokenPool # Contract name
-          file: ./abis/TokenPool.json # Contract ABI location
-      eventHandlers:
-        - event: RequestToken(address,uint256,uint256) # event fucntion in the contract
-          handler: handleRequestToken
-      file: ./src/mapping.ts
-```
-
-#### Update `schema.graphql`
-
-Update the database structure for the contract event data. A simple example is
-
-```text
-type TokenPool @entity {
-  id: ID!
-  sender: Bytes
-  amount: String
-  timestamp: String
-}
-```
-
-#### Generate the schema and contract code
-
-```text
+yarn prepare:mainet # yarn prepare:rinkeby
 yarn codegen
+yarn build
+graph deploy --studio boba-network # graph deploy --studio boba-network-rinkeby
 ```
 
-or you can run the following command if you have installed the global `graph-cli`
+#### L2 Subgraphs
+
+The admin port is not public.
 
 ```text
-graph build
+yarn install
+yarn prepare:mainet # yarn prepare:rinkeby
+yarn codegen
+yarn build
+yarn create:subgraph:mainnet  # yarn create:subgraph:rinkeby
+yarn deploy:subgraph:mainnet  # yarn deploy:subgraph:rinkeby
 ```
 
-The automcatically generated code is in `generated` folder.
+### Querying
 
-#### Update `src/mapping.ts`
+#### L2 Subgraphs
 
-`src/mappin.ts` is used to store the contract event data into `graphql`.
+> Mainnet: [https://graph.mainnet.boba.network/subgraphs/name/boba/Bridges/graphql](https://graph.mainnet.boba.network/subgraphs/name/boba/Bridges/graphql)
 
-#### Deploy to OMGX Graph Node
-
-Update the project name in `package.json` . The subgraph name needs to have the format `PREFIX/NAME`.
-
-```text
-{
-    "scripts": {
-	"create:subgraph": "graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME",
-        "deploy:subgraph": "graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME "
-   }
-}
-```
-
-```text
-yarn create:subgraph
-yarn deploy:subgraph
-```
-
-or you can directly run the following command if you have installed the global `graph-cli`
-
-```text
-graph create --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME
-graph deploy --ipfs https://graph.rinkeby.omgx.network:5001 --node https://graph.rinkeby.omgx.network:8020 PREFIX/NAME 
-```
-
-> NOTE: The `https://graph.rinkeby.omgx.network:8020` endpoint is **private**. Please contact us if you want to deploy subgraphs.
-
-### L2 Liquidity Pool Example
-
-The deployment code is in `omg-L2LP` folder. You can access deployed subgraphs through [L2LiquidityPoolSubgraph](https://graph.rinkeby.omgx.network/subgraphs/name/omgx/L2LiquidityPool).
-
-### L2 Token Pool Example
-
-The deployment code in `omg-TokenPool` folder. You can access deployed subgraphs through [L2TokenPoolSubgraph](https://graph.rinkeby.omgx.network/subgraphs/name/omgx/TokenPool).
-
-### Known BUG
-
-* It can't fetch the events in the functions that send the messages from L2 to L1.
+> Rinkeby: [https://graph.rinkeby.boba.network/subgraphs/name/boba/Bridges/graphql](https://graph.rinkeby.boba.network/subgraphs/name/boba/Bridges/graphql)
 
