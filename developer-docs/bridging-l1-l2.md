@@ -1,10 +1,10 @@
 ---
-description: Learn how to bridge assets between Ethereum L1 and OMGX L2.
+description: Learn how to bridge assets between Ethereum L1 and Boba L2.
 ---
 
 # Bridging L1 and L2
 
-Apps on OMGX can be made to interact with apps on Ethereum via a process called "bridging". In a nutshell, **contracts on OMGX can send messages to contracts on Ethereum, and vice versa**.
+Apps on Boba can be made to interact with apps on Ethereum via a process called "bridging". In a nutshell, **contracts on Boba can send messages to contracts on Ethereum, and vice versa**.
 
 ### L1 &lt;&gt; L2 Basics
 
@@ -28,7 +28,7 @@ address(_target).call{gas: _gasLimit}(_message);
 
 Except, of course, that we're calling a contract on a completely different network!
 
-We're glossing over a lot of the technical details that make this whole thing work under the hood but whatever. Point is, it works! Want to call a contract on OMGX from a contract on Ethereum? It's dead simple:
+We're glossing over a lot of the technical details that make this whole thing work under the hood but whatever. Point is, it works! Want to call a contract on Boba from a contract on Ethereum? It's dead simple:
 
 ```text
 // Pretend this is on L2
@@ -63,7 +63,7 @@ These messenger contracts`OVM_L1CrossDomainMessenger, OVM_L2CrossDomainMessenger
 
 **\#Communication is not instantaneous**
 
-Calls between two contracts on Ethereum happen synchronously and atomically within the same transaction. That is, you'll be told about the result of the call right away. Calls between contracts on OMGX and Ethereum happen _asynchronously_. If you want to know about the result of the call, you'll have to wait for the other contract send a message back to you.
+Calls between two contracts on Ethereum happen synchronously and atomically within the same transaction. That is, you'll be told about the result of the call right away. Calls between contracts on Boba and Ethereum happen _asynchronously_. If you want to know about the result of the call, you'll have to wait for the other contract send a message back to you.
 
 **\#Accessing msg.sender**
 
@@ -89,10 +89,10 @@ modifier onlyOwner() {
 
 ### Understanding the Challenge Period <a id="understanding-the-challenge-period"></a>
 
-One of the most important things to understand about L1 ⇔ L2 interaction is that **messages sent from Layer 2 to Layer 1 cannot be relayed for at least one week, unless you use the OMGX Fast Exit Liquidity Pool.** The fast-exit liquidity pool makes use of our custom `OVM_L1CrossDomainMessengerFast` and enables near instant withdrawals from L2 ⇔ L1. If you decide to opt out of using the LP, messages you send from Layer 2 will only be received on Layer 1 after this one week period has elapsed. We call this period of time the "challenge period" because it's a result of one of the core security mechanisms of the Optimistic Rollup: the transaction result challenge.
+One of the most important things to understand about L1 ⇔ L2 interaction is that **messages sent from Layer 2 to Layer 1 cannot be relayed for at least one week, unless you use the Boba Fast Exit Liquidity Pool.** The fast-exit liquidity pool makes use of our custom `OVM_L1CrossDomainMessengerFast` and enables near instant withdrawals from L2 ⇔ L1. If you decide to opt out of using the LP, messages you send from Layer 2 will only be received on Layer 1 after this one week period has elapsed. We call this period of time the "challenge period" because it's a result of one of the core security mechanisms of the Optimistic Rollup: the transaction result challenge.
 
 {% hint style="info" %}
-OMGX charges a small convenience fee for making use of the fast-exit liquidity pool. Any associated risks of removing the 7 day challenge period only apply to the liquidity pool users.
+Boba charges a small convenience fee for making use of the fast-exit liquidity pool. Any associated risks of removing the 7 day challenge period only apply to the liquidity pool users.
 {% endhint %}
 
 Optimistic Rollups are "optimistic" because they're based around the idea of publishing the _result_ of a transaction to Ethereum without actually executing the transaction on Ethereum. In the "optimistic" case, this transaction result is correct and we can completely avoid the need to perform complicated \(and expensive\) logic on Ethereum. 
@@ -103,7 +103,7 @@ If someone successfully executes this challenge, then the result is scrubbed fro
 
 #### On the length of the challenge period
 
-We've set the challenge period for standard withdrawals to be exactly seven days on the OMGX mainnet. If you prefer near instant withdrawals, you can make use of the LP token bridge explained below.
+We've set the challenge period for standard withdrawals to be exactly seven days on the Boba mainnet. If you prefer near instant withdrawals, you can make use of the LP token bridge explained below.
 
 ### Token Bridges <a id="understanding-the-challenge-period"></a>
 
