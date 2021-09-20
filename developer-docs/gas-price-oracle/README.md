@@ -1,5 +1,5 @@
 ---
-description: Learn about the OMGX L2 gas oracle algorithm
+description: Learn about the Boba L2 gas oracle algorithm
 ---
 
 # Gas Price Oracle
