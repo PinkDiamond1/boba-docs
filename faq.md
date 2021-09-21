@@ -38,3 +38,9 @@ At a high level, first of all, why did we choose to go down this route of scalin
 
 Why would someone use Boba versus Optimism? A number of reasons. First, we support Fast Exit out of the gate. The traditional seven-day exit window still exists. If you don’t want to pay the convenience fee and you’re willing to wait seven days to withdraw your funds, you can. But if you don’t want to wait, you can pay the convenience fees and withdraw your funds right away. We’ve designed that mechanism in such a way that it’s market-driven, namely, we’re not dependent on any one specific partner to fund these pools. It’s really up to the community and the market. If there’s demand for additional currency pairs for these swaps across the L1-L2 boundaries, the mechanism is there for a liquidity provider to step up and provide those swaps and make those available to the broader community.
 
+## The incentive contract for verification proofs is disabled
+
+In the current release of the Boba Network protocol, there may be rare cases in which the Sequencer submits a state root \(transaction result\) which is invalid and therefore could be challenged. As a result, we have not yet deployed the [Bond Manager ](https://github.com/omgnetwork/optimism/blob/develop/packages/contracts/contracts/optimistic-ethereum/OVM/verification/OVM_BondManager.sol)contract which compensates Verifier nodes for gas spent when submitting state root challenges. Verifier nodes in a default configuration do not run the [TypeScript service which submits challenges ](https://github.com/ethereum-optimism/optimism/blob/8d67991aba584c1703692ea46273ea8a1ef45f56/packages/contracts/test/contracts/OVM/verification/OVM_FraudVerifier.spec.ts)in the event of mismatched state roots. Additionally, our upgrade keys have the ability to directly remove state roots without going through an uncompensated state root challenge.
+
+
+
