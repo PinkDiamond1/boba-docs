@@ -42,5 +42,9 @@ Why would someone use Boba versus Optimism? A number of reasons. First, we suppo
 
 In the current release of the Boba Network protocol, there may be rare cases in which the Sequencer submits a state root \(transaction result\) which is invalid and therefore could be challenged. As a result, we have not yet deployed the [Bond Manager ](https://github.com/omgnetwork/optimism/blob/develop/packages/contracts/contracts/optimistic-ethereum/OVM/verification/OVM_BondManager.sol)contract which compensates Verifier nodes for gas spent when submitting state root challenges. Verifier nodes in a default configuration do not run the [TypeScript service which submits challenges ](https://github.com/ethereum-optimism/optimism/blob/8d67991aba584c1703692ea46273ea8a1ef45f56/packages/contracts/test/contracts/OVM/verification/OVM_FraudVerifier.spec.ts)in the event of mismatched state roots. Additionally, our upgrade keys have the ability to directly remove state roots without going through an uncompensated state root challenge.
 
+## Boba operates the only "Sequencer" node
+
+A Sequencer node is a special node in an Optimistic Ethereum network that can order transactions on short timescales \(on the order of minutes\). This opens up the door to very fast transaction confirmation times with strong guarantees about finality. Eventually, the operator of the Sequencer node on a network will be determined by some governing mechanism. However, for now, Boba Network operates the only such node on every major OE network.
+
 
 
