@@ -4,7 +4,7 @@
 
 To start off make sure you have a [local Boba](../local-omgx.md) running!
 
-Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgnetwork/optimism/blob/develop/examples/hardhat/contracts/ERC20.sol).
+Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgnetwork/optimism/tree/develop/omgx_examples/hardhat).
 
 1. Install the hardhat plugins.
 
