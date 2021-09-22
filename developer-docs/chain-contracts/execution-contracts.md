@@ -1,3 +1,7 @@
+---
+description: Learn more about the Boba Network execution contracts
+---
+
 # Execution Contracts
 
 The Execution contracts implement the Optimistic Virtual Machine, or OVM. Importantly, these contracts must execute in the same deterministic manner, whether a transaction is run on Layer 2, or Layer 1 \(during a challenge\).
