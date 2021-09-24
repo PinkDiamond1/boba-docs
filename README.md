@@ -43,11 +43,11 @@ These examples take you through the complete process of deploying an application
 
 {% page-ref page="developer-docs/examples/the-graph.md" %}
 
-### Start up a local OMGX
+### Start up a local Boba
 
 {% page-ref page="developer-docs/local-omgx.md" %}
 
-### **Access OMGX Wallet Contracts**
+### **Access Boba Wallet Contracts**
 
 {% page-ref page="developer-docs/omgx-wallet-contracts.md" %}
 

@@ -4,7 +4,7 @@ description: Learn about OMGX L2 gas price usage
 
 # Gas Price User Guide
 
-### How to set gas prices on OMGX L2
+### How to set gas prices on Boba L2
 
 {% hint style="info" %}
 **DO NOT** change your tx.gasPrice! It must be set to `.015 gwei`
@@ -30,5 +30,5 @@ Gas is paid in ETH.
 
 ### How do I get ETH?
 
-* You can deposit ETH via our [gateway](https://gateway.boba.network) onto OMGX Rinkeby
+* You can deposit ETH via our [gateway](https://gateway.boba.network) onto Boba Rinkeby
 

@@ -6,7 +6,7 @@ description: Learn how to run an OMGX replica to generate ground truth state roo
 
 ## Community Replica Service
 
-The `ops/docker-compose-replica-service.yml` docker-compose project runs a local replica of the OMGC Rinkeby l2geth. This service allows you run a local copy of the L2, which is useful for generating analyics for blockexplorers.
+The `ops/docker-compose-replica-service.yml` docker-compose project runs a local replica of the Boba Rinkeby l2geth. This service allows you run a local copy of the L2, which is useful for generating analyics for blockexplorers.
 
 ### Prerequisites
 
