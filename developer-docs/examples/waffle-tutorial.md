@@ -80,7 +80,7 @@ Since we're going to be using Docker, make sure that Docker is installed on your
 
 Now we just need to download, build, and install our Optimistic Ethereum node by running the following commands. 
 
-{% page-ref page="../local-omgx.md" %}
+{% page-ref page="../local-boba.md" %}
 
 With your local instance of Optimistic Ethereum up and running, let's test your contracts! Since the two JSON RPC provider URLs \(one for your local instance Ethereum and Optimistic Ethereum\) have already been specified in your `.env` file, all we need to do next is run the test command.
 

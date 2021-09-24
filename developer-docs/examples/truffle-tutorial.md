@@ -98,7 +98,7 @@ Woot! It's finally time to test our contract on top of Optimistic Ethereum. But 
 
 Since we're going to be using Docker, make sure that Docker is installed on your machine prior to moving on \(info on how to do that [here](https://docs.docker.com/engine/install/)\). **We recommend opening up a second terminal for this part.** This way you'll be able to keep the Optimistic Ethereum node running so you can execute some contract tests.
 
-{% page-ref page="../local-omgx.md" %}
+{% page-ref page="../local-boba.md" %}
 
 With your local instance of Optimistic Ethereum up and running, let's test your contracts! Since the two JSON RPC provider URLs \(one for your local instance Ethereum and Optimistic Ethereum\) have already been specified in your Truffle config files, all we need to do next is run the test command.
 

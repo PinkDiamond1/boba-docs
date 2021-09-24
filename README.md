@@ -45,11 +45,11 @@ These examples take you through the complete process of deploying an application
 
 ### Start up a local Boba
 
-{% page-ref page="developer-docs/local-omgx.md" %}
+{% page-ref page="developer-docs/local-boba.md" %}
 
 ### **Access Boba Wallet Contracts**
 
-{% page-ref page="developer-docs/omgx-wallet-contracts.md" %}
+{% page-ref page="developer-docs/boba-wallet-contracts.md" %}
 
 ### **Services**
 

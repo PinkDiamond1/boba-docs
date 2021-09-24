@@ -23,5 +23,5 @@ description: A collection of important Boba mainnet addresses
 | OVM\_StateCommitmentChain | 0x17834b754e2f09946CE48D7B5beB4D7D94D98aB6 |
 | OVM\_StateManagerFactory | 0x0c4935b421Af8F86698Fb77233e90AbC5f146846 |
 | OVM\_StateTransitionerFactory | 0xc6dd73D427Bf784dd1e2f9F64029a79533ffAb40 |
-| OVM\_Sequencer | 0xE48E5b731FAAb955d147FA954cba19d93Dc03529 |
+| OVM\_Sequencer | 0x702ad5C5FB87aACe54978143A707D565853d6Fd5 |
 

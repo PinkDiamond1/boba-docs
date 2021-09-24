@@ -10,11 +10,11 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 Wondering how to get started porting your solidity contracts over to Boba? [Contact our migration team](https://t.me/omgxsupport) and we'll get you started!
 
-{% page-ref page="local-omgx.md" %}
+{% page-ref page="local-boba.md" %}
 
 {% page-ref page="examples/" %}
 
-{% page-ref page="omgx-wallet-contracts.md" %}
+{% page-ref page="boba-wallet-contracts.md" %}
 
 {% page-ref page="case-studies/" %}
 

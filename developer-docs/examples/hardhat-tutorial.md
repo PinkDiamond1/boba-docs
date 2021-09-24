@@ -2,7 +2,7 @@
 
 ## Getting Started with the Optimistic Ethereum: Simple ERC20 Token Hardhat Tutorial
 
-To start off make sure you have a [local Boba](../local-omgx.md) running!
+To start off make sure you have a [local Boba](../local-boba.md) running!
 
 Refer to our ERC20 test contract repo for Hardhat [here](https://github.com/omgnetwork/optimism/tree/develop/omgx_examples/hardhat).
 
