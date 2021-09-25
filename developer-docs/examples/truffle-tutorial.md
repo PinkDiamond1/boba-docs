@@ -4,7 +4,7 @@
 
 Hi there! Welcome to our Optimistic Ethereum ERC20 Truffle example!
 
-You can find the repo with all working Truffle examples [here](https://github.com/omgnetwork/optimism/tree/develop/examples/truffle)
+You can find the repo with all working Truffle examples [here](https://github.com/omgnetwork/optimism/tree/develop/omgx_examples/truffle)
 
 If you're interested in writing your first L2-compatible smart contract using Truffle as your smart contract testing framework, then you've come to the right place! This repo serves as an example for how go through and compile/test/deploy your contracts on both Ethereum and Optimistic Ethereum.
 
