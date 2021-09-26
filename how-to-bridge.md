@@ -43,7 +43,9 @@ description: Boba user guide on how to bridge with Metamask
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
-7\) Approve the transaction in Metamask one more time
+7\) Approve the transaction in Metamask one more time. Don't edit the gas fees, your transaction might fail.
+
+![](.gitbook/assets/image%20%289%29.png)
 
 ## How to change Metamask networks 
 
@@ -69,5 +71,5 @@ description: Boba user guide on how to bridge with Metamask
 
 2\) Follow the following settings
 
-![](.gitbook/assets/image%20%289%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
