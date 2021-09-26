@@ -24,6 +24,7 @@
   * [Boba Rinkeby Token Addresses](developer-docs/rinkeby-token-addresses.md)
   * [Rinkeby Testnet Addresses](developer-docs/rinkeby-testnet-addresses.md)
   * [Rinkeby Metamask Settings](developer-docs/rinkeby-metamask-settings.md)
+* [How To Bridge](how-to-bridge.md)
 * [Bug Bounty Program](bug-bounty.md)
 * [FAQ](faq.md)
 * [Telegram Support](https://t.me/bobadev)
