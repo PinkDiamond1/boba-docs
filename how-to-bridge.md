@@ -39,11 +39,11 @@ description: Boba user guide on how to bridge with Metamask
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.07.32.png)
 
-7\) Approve your spend amount in Metamask. Don't edit the gas fees, your transaction might fail.
+7\) Approve your **spend amount** in Metamask. Don't edit the gas fees, your transaction might fail.
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
-7\) Approve the transaction in Metamask one more time. Don't edit the gas fees, your transaction might fail.
+7\) Approve **the transaction** in Metamask one more time. Don't edit the gas fees, your transaction might fail.
 
 ![](.gitbook/assets/image%20%289%29.png)
 
