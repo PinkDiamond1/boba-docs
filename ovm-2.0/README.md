@@ -4,7 +4,13 @@ description: Learn more about the upcoming Boba Network re-genesis and OVM 2.0
 
 # OVM 2.0
 
-## OVM 2.0 Changeset <a id="frontmatter-title"></a>
+{% hint style="info" %}
+**!! Important Update !!!**  
+  
+Boba Network will implement OVM 2.0 very soon, therefore there are no more custom changes needed for L1 contracts in order to deploy to Boba. Due to a chain re-genesis all contracts will have to be re-compiled and re-deployed. If you're preparing to deploy to Boba, make sure that your contracts run fine on any Ethereum L1 testnet. **No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
+{% endhint %}
+
+## OVM 2.0 Changeset
 
 During the next re-genesis \(Early October on Rinkeby, main network TBA\), we will have a series of breaking changes as a part of an upgrade to the OVM. Fundamentally, this will drastically reduce the differences between the OVM and EVM so that developers can implement their contracts with mostly just one target in mind, instead of managing OVM idiosyncrasies with separate contracts. Here is the list of key breaking changes to watch for:
 
