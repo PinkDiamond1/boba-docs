@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Boba Network](README.md)
+* [OVM 2.0](ovm-2.0/README.md)
+  * [Fee Scheme OVM 2.0](ovm-2.0/fee-scheme-ovm-2.0.md)
+  * [Transaction Fees OVM 2.0](ovm-2.0/transaction-fees-ovm-2.0.md)
 * [Developer Docs](developer-docs/README.md)
   * [Local Boba](developer-docs/local-boba.md)
   * [Examples](developer-docs/examples/README.md)
