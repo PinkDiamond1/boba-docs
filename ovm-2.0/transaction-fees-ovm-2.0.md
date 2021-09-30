@@ -19,5 +19,5 @@ You pay the sum of two fees: Your L2 \(execution\) fee and your L1 \(security\) 
    * `l1GasPrice` is the same as the normal gas price in L1 Ethereum
    * `l1GasUsed` is calculated as `1.5*(2750 gas + calldataGas)`. Thus, more calldata your transaction includes, the more expensive your L1 fee will be. For example, an ETH transfer has no calldata, so it will have the cheapest L1 fee, whereas large contract deployments can have over 25kb of calldata and will result in a high L1 fee. We currently add a 50% overhead to the L1 fee to ensure the fee paid covers the actual L1 costs.
 
-To get ETH on Boba Network you can deposit ETH via [https://gateway.optimism.io/ \(opens new window\)](https://gateway.boba.network)on both Rinkeby or Mainnet. Soon you will be able to also deposit ETH for slightly cheaper via [Anyswap](https://anyswap.exchange/#/router).
+To get ETH on Boba Network you can deposit ETH via[ https://gateway,boba.network](https://gateway.boba.network) on both Rinkeby or Mainnet. Soon you will be able to also deposit ETH for slightly cheaper via [Anyswap](https://anyswap.exchange/#/router).
 
