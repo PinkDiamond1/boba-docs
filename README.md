@@ -5,7 +5,9 @@ description: Learn how to deploy your smart contracts on the Boba Network OVM
 # Boba Network
 
 {% hint style="info" %}
-Hi there! Please take note that OMGX Network has rebranded to Boba Network and you might stumble across some old code references to OMGX!
+**!!! Important Update !!!**  
+  
+Boba Network will implement OVM 2.0 very soon, therefore there are no more custom changes needed for L1 contracts in order to deploy to Boba. Due to a chain re-genesis all contracts will have to be re-compiled and re-deployed. If you're preparing to deploy to Boba, make sure that your contracts run fine on any Ethereum L1 testnet. **No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
 {% endhint %}
 
 Boba Network is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io/) with the research and development effort of the Enya & Boba team on swap-based onramp, fast exit and cross-chain bridging. We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
