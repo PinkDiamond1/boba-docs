@@ -8,7 +8,7 @@ description: Fee scheme in Boba Network under OVM 2.0
 
 This page refers to the **new** state of Boba Network after the OVM 2.0 update. We expect to deploy OVM 2.0 mid October on the Rinkeby test network. Production deployment TBA.
 
-You can see how the fee is calculated and deducted [here](https://community.optimism.io/docs/users/fees-2.0.html).
+You can see how the fee is calculated and deducted [here](transaction-fees-ovm-2.0.md).
 
 ### For backend developers: <a id="for-backend-developers"></a>
 
