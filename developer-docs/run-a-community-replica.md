@@ -1,5 +1,5 @@
 ---
-description: Learn how to run an OMGX replica to generate ground truth state roots
+description: Learn how to run an Boba replica to generate ground truth state roots
 ---
 
 # Run a Community Replica
@@ -23,8 +23,8 @@ Replace `INFURA_KEY` with your own key in [docker-compose-replica-service.yml](h
 Start the replica service via:
 
 ```text
-cd ops
-docker-compose -f docker-compose-replica-service.yml up
+cd ops/
+docker-compose -f docker-compose-replica-service.yml up [-d] [-V]
 ```
 
 This will pull two images from docker hub:
