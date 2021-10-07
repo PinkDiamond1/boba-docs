@@ -1,10 +1,13 @@
 # Table of contents
 
 * [Boba Network](README.md)
-* [OVM 2.0](ovm-2.0/README.md)
-  * [Fee Scheme OVM 2.0](ovm-2.0/fee-scheme-ovm-2.0.md)
-  * [Transaction Fees OVM 2.0](ovm-2.0/transaction-fees-ovm-2.0.md)
-* [Developer Docs](developer-docs/README.md)
+* [OVM 2.0](2.0/README.md)
+  * [Rinkeby Links](2.0/rinkeby-links.md)
+  * [Rinkeby Contract Addresses](2.0/rinkeby-contract-addresses.md)
+  * [Fund L2 Accounts](2.0/fund-l2-accounts.md)
+  * [Fee Scheme OVM 2.0](2.0/fee-scheme-ovm-2.0.md)
+  * [Transaction Fees OVM 2.0](2.0/transaction-fees-ovm-2.0.md)
+* [OVM 1.0](developer-docs/README.md)
   * [Local Boba](developer-docs/local-boba.md)
   * [Examples](developer-docs/examples/README.md)
     * [Truffle Tutorial](developer-docs/examples/truffle-tutorial.md)

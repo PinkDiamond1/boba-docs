@@ -1,12 +1,12 @@
 ---
-description: Learn how to run an Boba replica to generate ground truth state roots
+description: Learn how to run a Boba replica to generate ground truth state roots
 ---
 
 # Run a Community Replica
 
 ## Community Replica Service
 
-The `ops/docker-compose-replica-service.yml` docker-compose project runs a local replica of the Boba Rinkeby l2geth. This service allows you run a local copy of the L2, which is useful for generating analyics for blockexplorers.
+The `ops/docker-compose-replica-service.yml` docker-compose project runs a local replica of the Boba Mainnet l2geth. This service allows you run a local copy of the L2, which is useful for generating analyics for blockexplorers.
 
 ### Prerequisites
 
@@ -24,7 +24,7 @@ Start the replica service via:
 
 ```text
 cd ops/
-docker-compose -f docker-compose-replica-service.yml up [-d] [-V]
+docker-compose -f docker-compose-replica-service.yml up -d -V
 ```
 
 This will pull two images from docker hub:
