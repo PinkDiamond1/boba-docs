@@ -7,6 +7,7 @@
   * [Fund L2 Accounts](2.0/fund-l2-accounts.md)
   * [Fee Scheme OVM 2.0](2.0/fee-scheme-ovm-2.0.md)
   * [Transaction Fees OVM 2.0](2.0/transaction-fees-ovm-2.0.md)
+  * [OVM 2.0 Wallet Contracts](2.0/ovm-2.0-wallet-contracts.md)
 * [OVM 1.0](developer-docs/README.md)
   * [Local Boba](developer-docs/local-boba.md)
   * [Examples](developer-docs/examples/README.md)
@@ -36,4 +37,3 @@
 * [Telegram Support](https://t.me/bobadev)
 * [Discord Support](https://omg.eco/discord)
 * [GitHub](https://github.com/omgnetwork/optimism)
-
