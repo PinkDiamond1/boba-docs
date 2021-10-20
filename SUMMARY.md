@@ -2,6 +2,7 @@
 
 * [Boba Network](README.md)
 * [OVM 2.0](2.0/README.md)
+  * [Examples](2.0/examples.md)
   * [Rinkeby Links](2.0/rinkeby-links.md)
   * [Rinkeby Contract Addresses](2.0/rinkeby-contract-addresses.md)
   * [Fund L2 Accounts](2.0/fund-l2-accounts.md)
