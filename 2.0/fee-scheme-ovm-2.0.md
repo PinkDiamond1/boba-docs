@@ -6,22 +6,22 @@ description: Fee scheme in Boba Network under OVM 2.0
 
 ## Fee Scheme in OVM 2.0
 
-This page refers to the **new** state of Boba Network after the OVM 2.0 update. We expect to deploy OVM 2.0 mid October on the Rinkeby test network. Production deployment TBA.
+This page refers to the **new** state of Boba Network after the OVM 2.0 update.&#x20;
 
 You can see how the fee is calculated and deducted [here](transaction-fees-ovm-2.0.md).
 
-### For backend developers: <a id="for-backend-developers"></a>
+### For backend developers: <a href="for-backend-developers" id="for-backend-developers"></a>
 
-* You must send your transaction with a tx.gasPrice that is greater than or equal to the sequencer's l2 gas price. You can read this value from the Sequencer by querying the `OVM_GasPriceOracle` contract \(`OVM_GasPriceOracle.gasPrice`\) or by simply making an RPC query to `eth_gasPrice`. If you don't specify your `gasPrice` as an override when sending a transaction , `ethers` by default queries `eth_gasPrice` which will return the lowest acceptable L2 gas price.
-* You can set your `tx.gasLimit` however you might normally set it \(e.g. via `eth_estimateGas`\). You can expect that gas usage for transactions on Optimism Ethereum will be identical to gas usage on Ethereum.
+* You must send your transaction with a tx.gasPrice that is greater than or equal to the sequencer's l2 gas price. You can read this value from the Sequencer by querying the `OVM_GasPriceOracle` contract (`OVM_GasPriceOracle.gasPrice`) or by simply making an RPC query to `eth_gasPrice`. If you don't specify your `gasPrice` as an override when sending a transaction , `ethers` by default queries `eth_gasPrice` which will return the lowest acceptable L2 gas price.
+* You can set your `tx.gasLimit` however you might normally set it (e.g. via `eth_estimateGas`). You can expect that gas usage for transactions on Optimism Ethereum will be identical to gas usage on Ethereum.
 * We recommend building error handling around the `Fee too Low` error detailed below, to allow users to re-calculate their `tx.gasPrice` and resend their transaction if fees spike.
 
-### For Frontend and Wallet developers: <a id="for-frontend-and-wallet-developers"></a>
+### For Frontend and Wallet developers: <a href="for-frontend-and-wallet-developers" id="for-frontend-and-wallet-developers"></a>
 
 * We recommend displaying an estimated fee to users via the following math:
-  1. To estimate the L1 \(security\) fee that the user should expect to pay. For example, calculating the L1 fee for sending a USDC transfer:
+  1. To estimate the L1 (security) fee that the user should expect to pay. For example, calculating the L1 fee for sending a USDC transfer:
 
-```text
+```
 import { getContractFactory, predeploys }from '@eth-optimism/contracts'
 import { ethers } from 'ethers'
 const OVM_GasPriceOracle = getContractFactory('OVM_GasPriceOracle')
@@ -43,21 +43,20 @@ const l1FeeInWei = await OVM_GasPriceOracle.getL1Fee(signedTx)
   * If they lower it, their transaction will get reverted
   * If they increase it, they willl still have their tx immediately included, but will have overpaid.
 * Users are welcome to change their `tx.gasLimit` as it functions exactly like on L1
-* You can show the math :
+*   You can show the math :
 
-  ```text
-  L1 Fee: .00098 ETH ($3.94)
-  L2 Fee: .00049 ETH ($1.97)
-  ____________________________
-  Estimated Fee: 0.00147 ETH ($5.91)
-  ```
-
+    ```
+    L1 Fee: .00098 ETH ($3.94)
+    L2 Fee: .00049 ETH ($1.97)
+    ____________________________
+    Estimated Fee: 0.00147 ETH ($5.91)
+    ```
 * Or you can hide the formula behind a tooltip or an "Advanced" section and just display the estimated fee to users
   * For MVP: don't _need_ to display the L1 or L2 fee
-* Might need to regularly refresh the L1 Fee and L2 Fee estimate to ensure it is accurate at the time the user sends it \(e.g. they get the fee quote and leave for 12 hours then come back\)
-  * Ideas: If the L1 fee quoted is &gt; Xminutes old, could display a warning next to it
+* Might need to regularly refresh the L1 Fee and L2 Fee estimate to ensure it is accurate at the time the user sends it (e.g. they get the fee quote and leave for 12 hours then come back)
+  * Ideas: If the L1 fee quoted is > Xminutes old, could display a warning next to it
 
-### Common RPC Errors <a id="common-rpc-errors"></a>
+### Common RPC Errors <a href="common-rpc-errors" id="common-rpc-errors"></a>
 
 There are three common errors that would cause your transaction to be rejected at the RPC level
 
@@ -74,4 +73,3 @@ There are three common errors that would cause your transaction to be rejected a
    * Error code: `-32000`
    * Error message: `gas price too high: 1000000000000000 wei, use at most tx.gasPrice = Y wei` where `x` is 3\*l2GasPrice.
    * When the `tx.gasPrice` provided is ≥3x the expected `tx.gasPrice`, you will get this error^, note this is a runtime config option and is subject to change
-
