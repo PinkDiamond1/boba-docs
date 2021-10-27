@@ -22,53 +22,53 @@ description: Boba user guide on how to bridge with Metamask
 \
 2\) Connect your Metamask wallet&#x20;
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.00.09.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.00.09.png)
 
 \
 3\) Click on 'Wallet' on the navigation bar on the left&#x20;
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.04.54.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.04.54.png)
 
 4\) Click 'Bridge' next to the token you want to bridge to Boba&#x20;
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.06.21.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.06.21.png)
 
 5\) Choose 'Bridge' or 'Fast Bridge' - fast bridge is faster but charges 0.1% LP fee&#x20;
 
 6\) Type in the amount you want to bridge
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.07.32.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.07.32.png)
 
 7\) Approve your **spend amount **in Metamask. Don't edit the gas fees, your transaction might fail.
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
 7\) Approve **the transaction** in Metamask one more time. Don't edit the gas fees, your transaction might fail.
 
-![](<.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9).png>)
 
 ## How to change Metamask networks&#x20;
 
 1\) Switch your Metamask to Boba L2 network by clicking the Layer 2 button
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.11.49.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.11.49.png)
 
 2\) Confirm that you want to change networks
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.13.13.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.13.13.png)
 
 3\) If you want to switch back to Layer 1, simply click on the Layer 1 icon again and confirm the network switch in Metamask once again
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.14.21.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.14.21.png)
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.15.19.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.15.19.png)
 
 ## Manually add the Boba L2 network
 
 1\) Under Metamask settings > networks, click add network
 
-![](.gitbook/assets/screen-shot-2021-09-26-at-15.16.29.png)
+![](../.gitbook/assets/screen-shot-2021-09-26-at-15.16.29.png)
 
 2\) Follow the following settings
 
-![](<.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10).png>)
