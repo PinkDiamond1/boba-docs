@@ -5,7 +5,7 @@ description: Boba user guide on how to bridge with Metamask
 # How To Bridge
 
 {% hint style="info" %}
-**Before getting started , make sure you have enough ETH in your Metamask wallet to approve and send transactions \(we recommend 0.05 ETH\)**
+**Before getting started , make sure you have enough ETH in your Metamask wallet to approve and send transactions (we recommend 0.05 ETH)**
 {% endhint %}
 
 {% hint style="info" %}
@@ -18,36 +18,36 @@ description: Boba user guide on how to bridge with Metamask
 
 ## How to bridge to Boba L2
 
-1\) Go to [https://gateway.boba.network/](https://gateway.boba.network/)   
-  
-2\) Connect your Metamask wallet 
+1\) Go to [https://gateway.boba.network/](https://gateway.boba.network) \
+\
+2\) Connect your Metamask wallet&#x20;
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.00.09.png)
 
-  
-3\) Click on 'Wallet' on the navigation bar on the left 
+\
+3\) Click on 'Wallet' on the navigation bar on the left&#x20;
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.04.54.png)
 
-4\) Click 'Bridge' next to the token you want to bridge to Boba 
+4\) Click 'Bridge' next to the token you want to bridge to Boba&#x20;
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.06.21.png)
 
-5\) Choose 'Bridge' or 'Fast Bridge' - fast bridge is faster but charges 0.1% LP fee 
+5\) Choose 'Bridge' or 'Fast Bridge' - fast bridge is faster but charges 0.1% LP fee&#x20;
 
 6\) Type in the amount you want to bridge
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.07.32.png)
 
-7\) Approve your **spend amount** in Metamask. Don't edit the gas fees, your transaction might fail.
+7\) Approve your **spend amount **in Metamask. Don't edit the gas fees, your transaction might fail.
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
 7\) Approve **the transaction** in Metamask one more time. Don't edit the gas fees, your transaction might fail.
 
-![](.gitbook/assets/image%20%289%29.png)
+![](<.gitbook/assets/image (9).png>)
 
-## How to change Metamask networks 
+## How to change Metamask networks&#x20;
 
 1\) Switch your Metamask to Boba L2 network by clicking the Layer 2 button
 
@@ -65,11 +65,10 @@ description: Boba user guide on how to bridge with Metamask
 
 ## Manually add the Boba L2 network
 
-1\) Under Metamask settings &gt; networks, click add network
+1\) Under Metamask settings > networks, click add network
 
 ![](.gitbook/assets/screen-shot-2021-09-26-at-15.16.29.png)
 
 2\) Follow the following settings
 
-![](.gitbook/assets/image%20%2810%29.png)
-
+![](<.gitbook/assets/image (10).png>)

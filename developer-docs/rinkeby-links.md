@@ -7,5 +7,5 @@ description: A collection of links to get started on Boba v2.0 on the Rinkeby te
 | Rinkeby RPC     | [https://rinkeby.boba.network](https://rinkeby-v2.boba.network)                          |
 | --------------- | ---------------------------------------------------------------------------------------- |
 | Rinkeby ChainID | 28                                                                                       |
-| Bridge          | [https://gateway.boba.network](https://gateway.boba.network)                             |
+| Bridge          | [https://gateway.rinkeby.boba.network](https://gateway.boba.network)                     |
 | Blockexplorer   | [https://blockexplorer.rinkeby.boba.network](https://blockexplorer.rinkeby.boba.network) |

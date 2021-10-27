@@ -29,42 +29,42 @@ Our documentation is a work in progress. If you have questions or feel like some
 
 #### Choose your deployment stack
 
-{% content-ref url="developer-docs/examples/truffle-tutorial.md" %}
-[truffle-tutorial.md](developer-docs/examples/truffle-tutorial.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="developer-docs/examples/waffle-tutorial.md" %}
-[waffle-tutorial.md](developer-docs/examples/waffle-tutorial.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="developer-docs/examples/hardhat-tutorial.md" %}
-[hardhat-tutorial.md](developer-docs/examples/hardhat-tutorial.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 #### Fix possible errors step by step
 
-{% content-ref url="developer-docs/examples/compiling-ovm.md" %}
-[compiling-ovm.md](developer-docs/examples/compiling-ovm.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 These examples take you through the complete process of deploying an application to **Optimistic Rollups**. It's not very different from simply deploying to Ethereum. We're working hard to make sure any changes to your software stack are relatively minimal.
 
 ### Set up The Graph
 
-{% content-ref url="developer-docs/examples/the-graph.md" %}
-[the-graph.md](developer-docs/examples/the-graph.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Start up a local Boba
 
-{% content-ref url="developer-docs/local-boba.md" %}
-[local-boba.md](developer-docs/local-boba.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### **Access Boba Wallet Contracts**
 
-{% content-ref url="developer-docs/boba-wallet-contracts.md" %}
-[boba-wallet-contracts.md](developer-docs/boba-wallet-contracts.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### **Services**

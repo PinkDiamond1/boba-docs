@@ -13,10 +13,15 @@ description: Deploy your contracts to Boba v2.0 on Rinkeby
   "AddressManager":"0x93A96D6A5beb1F661cf052722A1424CDDA3e9418",
   "Proxy__L1CrossDomainMessenger":"0xF10EEfC14eB5b7885Ea9F7A631a21c7a82cf5D76",
   "Proxy__L1StandardBridge":"0xDe085C82536A06b40D20654c2AbA342F2abD7077",
+ {
   "TOKENS": {
+    "TEST": {
+      "L1": "0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02",
+      "L2": "0xa7B87310EdA959Ad6280F2CCc86b77B9407902b2"
+    },
     "USDT": {
       "L1": "0xD9BA894E0097f8cC2BBc9D24D308b98e36dc6D02",
-      "L2": "0x9d0364c866A73e34649869525CD7576080259A42"
+      "L2": "0xa7B87310EdA959Ad6280F2CCc86b77B9407902b2"
     },
     "DAI": {
       "L1": "0x5592EC0cfb4dbc12D3aB100b257153436a1f0FEa",
