@@ -5,7 +5,6 @@
   * [Examples](developer-docs/examples.md)
   * [Rinkeby Links](developer-docs/rinkeby-links.md)
   * [Rinkeby Contract Addresses](developer-docs/rinkeby-contract-addresses.md)
-  * [Fund L2 Accounts](developer-docs/fund-l2-accounts.md)
   * [Fee Scheme OVM 2.0](developer-docs/fee-scheme-ovm-2.0.md)
   * [Transaction Fees OVM 2.0](developer-docs/transaction-fees-ovm-2.0.md)
   * [OVM 2.0 Wallet Contracts](developer-docs/ovm-2.0-wallet-contracts.md)
