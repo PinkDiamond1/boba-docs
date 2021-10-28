@@ -1,8 +1,8 @@
 ---
-description: List of OMGX L1 and L2 token addresses for testing on Rinkeby
+description: List of Boba L1 and L2 token addresses for testing on Rinkeby
 ---
 
-# OMGX Token Addresses
+# Boba Token Addresses
 
 ```text
 {

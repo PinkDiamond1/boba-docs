@@ -6,7 +6,7 @@ description: Frequently asked questions to get started on Boba
 
 ## What is Boba Network?
 
-Boba Network is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io) with the research and development effort of the Enya team on swap-based onramp, fast exit and cross-chain bridging.
+Boba Network is an Optimistic Rollup that combines the great open source work done by [Optimism](https://community.optimism.io) with the research and development effort of the Enya team on swap-based onramp, fast exit, cross-chain bridging and other features.
 
 We chose to build on Optimism because it is essentially a modified version of Ethereum, which makes it relatively easy to ensure EVM and Solidity compatibility, minimizing the efforts required to migrate smart contracts from L1 to L2.
 
@@ -39,8 +39,6 @@ Many wallets now allow applications to trigger a popup to switch between network
 \* [Click here for Boba Network Ethereum, the **production** network](https://gateway.boba.network).
 
 \* [Click here for Boba Network Rinkeby, the **test** network](https://gateway.rinkeby.boba.network).
-
-‍
 
 If your wallet does not support this feature, you will have to connect manually. The exact process for connecting your wallet to a Boba Ethereum network depends on the specific wallet software you're using.
 
