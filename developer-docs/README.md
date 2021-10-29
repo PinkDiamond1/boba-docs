@@ -6,11 +6,11 @@ description: Learn more about the upcoming Boba Network re-genesis and OVM 2.0
 
 {% hint style="info" %}
 **!! Important Update !!!**\
-****\
-****Boba Network implemented OVM 2.0 Oct 28th, therefore there are no more custom changes needed for L1 contracts to deploy to Boba. **No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
+Boba Network implemented OVM 2.0 Oct 28th, therefore there are no more custom changes needed for L1 contracts to deploy to Boba.\
+**No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
 {% endhint %}
 
-## OVM 2.0 Changeset
+## Historical Notes for users of OVM 1.0 - the OVM 2.0 Changeset
 
 The v1 to v2 changes reduced the differences between the OVM and EVM so that developers can implement their contracts with mostly just one target in mind, instead of managing OVM idiosyncrasies with separate contracts. Here is the list of key breaking changes to watch for, in case you are used to v1:
 

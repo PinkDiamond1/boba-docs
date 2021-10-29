@@ -18,8 +18,7 @@ You can see how the fee is calculated and deducted [here](transaction-fees-ovm-2
 
 ### For Frontend and Wallet developers: <a href="for-frontend-and-wallet-developers" id="for-frontend-and-wallet-developers"></a>
 
-* We recommend displaying an estimated fee to users via the following math:
-  1. To estimate the L1 (security) fee that the user should expect to pay. For example, calculating the L1 fee for sending a USDC transfer:
+* We recommend displaying an estimated fee to users via the following math. For example, calculating the L1 fee for sending a USDC transfer:
 
 ```
 import { getContractFactory, predeploys }from '@eth-optimism/contracts'
@@ -40,25 +39,25 @@ const l1FeeInWei = await OVM_GasPriceOracle.getL1Fee(signedTx)
 ```
 
 * You should _not_ allow users to change their `tx.gasPrice`
-  * If they lower it, their transaction will get reverted
-  * If they increase it, they willl still have their tx immediately included, but will have overpaid.
-* Users are welcome to change their `tx.gasLimit` as it functions exactly like on L1
-*   You can show the math :
+  * If they lower it, their transaction will revert
+  * If they increase it, they will still have their tx immediately included, but will have overpaid.
 
-    ```
-    L1 Fee: .00098 ETH ($3.94)
-    L2 Fee: .00049 ETH ($1.97)
-    ____________________________
-    Estimated Fee: 0.00147 ETH ($5.91)
-    ```
+* Users are welcome to change their `tx.gasLimit` as it functions exactly like on L1. You can show the math :
+
+  ```
+  L1 Fee: .00098 ETH ($3.94)
+  L2 Fee: .00049 ETH ($1.97)
+  ____________________________
+  Estimated Fee: 0.00147 ETH ($5.91)
+  ```
 * Or you can hide the formula behind a tooltip or an "Advanced" section and just display the estimated fee to users
   * For MVP: don't _need_ to display the L1 or L2 fee
 * Might need to regularly refresh the L1 Fee and L2 Fee estimate to ensure it is accurate at the time the user sends it (e.g. they get the fee quote and leave for 12 hours then come back)
-  * Ideas: If the L1 fee quoted is > Xminutes old, could display a warning next to it
+  * Ideas: If the L1 fee quoted is > X minutes old, could display a warning next to it
 
 ### Common RPC Errors <a href="common-rpc-errors" id="common-rpc-errors"></a>
 
-There are three common errors that would cause your transaction to be rejected at the RPC level
+There are three common errors that would cause your transaction to be rejected
 
 1. **Insufficient funds**
    * If you are trying to send a transaction and you do not have enough ETH to pay for that L2 fee + the L1 Fee charged, your transaction will be rejected.
