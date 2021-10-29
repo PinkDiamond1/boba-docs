@@ -5,8 +5,8 @@ description: Learn more about the upcoming Boba Network re-genesis and OVM 2.0
 # OVM 2.0
 
 {% hint style="info" %}
-**!! Important Update !!!**\
-Boba Network implemented OVM 2.0 Oct 28th, therefore there are no more custom changes needed for L1 contracts to deploy to Boba.\
+**!!! Important Update !!!**\
+Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom changes are needed for L1 contracts to be deployed to Boba. 
 **No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
 {% endhint %}
 
