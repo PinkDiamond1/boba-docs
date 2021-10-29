@@ -18,13 +18,12 @@ description: Boba user guide on how to bridge with Metamask
 
 ## How to bridge to Boba L2
 
-1\) Go to [https://gateway.boba.network/](https://gateway.boba.network) \
-\
+1\) Go to [https://gateway.boba.network/](https://gateway.boba.network)
+
 2\) Connect your Metamask wallet&#x20;
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.00.09.png)
 
-\
 3\) Click on 'Wallet' on the navigation bar on the left&#x20;
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.04.54.png)
@@ -43,11 +42,11 @@ description: Boba user guide on how to bridge with Metamask
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
-7\) Approve **the transaction** in Metamask one more time. Don't edit the gas fees, your transaction might fail.
+8\) Approve **the transaction** in Metamask one more time. Don't edit the gas fees, your transaction might fail.
 
 ![](<../.gitbook/assets/image (9).png>)
 
-## How to change Metamask networks&#x20;
+## How to change Metamask network
 
 1\) Switch your Metamask to Boba L2 network by clicking the Layer 2 button
 

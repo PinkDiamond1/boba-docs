@@ -44,7 +44,7 @@ If your wallet does not support this feature, you will have to connect manually.
 
 ## How do I move assets into or out of Boba Network? <a href="038a" id="038a"></a>
 
-To move assets into or out of an Optimistic Ethereum network you can use [**Boba's Gateway**](https://gateway.boba.network). We have detailed instructions in our [documentation](user-docs/how-to-bridge.md).
+To move assets into or out of an Optimistic Ethereum network you can use the [**Boba Gateway**](https://gateway.boba.network). We have detailed instructions in our [documentation](user-docs/how-to-bridge.md).
 
 ## Can I cancel a withdrawal after it has been submitted? <a href="038a" id="038a"></a>
 
