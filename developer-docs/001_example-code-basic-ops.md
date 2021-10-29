@@ -1,12 +1,12 @@
 ---
-description: Learn how to use basic features of Boba (e.g. bridges, basic L2 ops) through example
+description: Learn how to use basic features of Boba (e.g. bridges, basic L2 ops) through examples
 ---
 
 # OVM 2.0 Basic Operations Code examples
 
 To see examples of how to perform basic operations on Boba v2, please see the react code for the [Boba gateway](https://github.com/omgnetwork/optimism-v2/blob/develop/packages/boba/gateway/src/services/networkService.js).
 
-### An L2->L2 transfer
+## An L2->L2 transfer
 
 ```javascript
 
@@ -53,7 +53,7 @@ async transfer(address, value_Wei_String, currency) {
 
 ```
 
-### An L1->L2 Classical Bridging Operation
+## An L1->L2 Classic Bridge Operation
 
 ```javascript
 
