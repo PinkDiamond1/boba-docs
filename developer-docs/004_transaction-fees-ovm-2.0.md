@@ -10,9 +10,7 @@ This page refers to the **new** state of Boba Network after the OVM 2.0 update (
 
 ### Fees in a nutshell <a id="fees-in-a-nutshell"></a>
 
-Fees on Boba are, for the most part, significantly lower than on the Ethereum mainnet. 
-
-The cost of every transaction is composed of two parts: 
+Fees on Boba are, for the most part, significantly lower than on the Ethereum mainnet. The cost of every transaction is the sum of two values: 
 
 1. Your L2 \(execution\) fee, and 
 2. Your L1 \(security\) fee. 

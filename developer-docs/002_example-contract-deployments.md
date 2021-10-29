@@ -1,5 +1,5 @@
 ---
-description: Hardhat deployment example for OVM 2.0
+description: Hardhat deployment examples for OVM 2.0
 ---
 
 # Contract Deployment Examples

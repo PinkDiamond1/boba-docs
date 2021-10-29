@@ -2,7 +2,7 @@
 description: A collection of links to get started on Mainnet Boba
 ---
 
-# Mainnet Links and Endpoints
+## Mainnet Links and Endpoints
 
 | Mainnet RPC     | [https://mainnet.boba.network](https://mainnet.boba.network)             |
 | --------------- | -------------------------------------------------------------------------|
@@ -10,11 +10,31 @@ description: A collection of links to get started on Mainnet Boba
 | Gateway         | [https://gateway.boba.network](https://gateway.boba.network)             |
 | Blockexplorer   | [https://blockexplorer.boba.network](https://blockexplorer.boba.network) |
 
-# Mainnet Contract and Token Addresses
+## Mainnet Contract and Token Addresses
+
+The `AddressManger` is located at '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089'. The `AddressManager` can be queried for current addresses like this:
+
+```javascript
+
+  this.AddressManager = new ethers.Contract(
+    '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089',
+    AddressManagerJson.abi,
+    this.L1Provider
+  )
+  console.log("AddressManager Contract:",this.AddressManager)
+
+  //obtain the current address of the Proxy__L1CrossDomainMessenger
+  const address = await this.AddressManager.getAddress('Proxy__L1CrossDomainMessenger')
+
+  /*********** NOTE *****************/
+  /* If the contract is not in the AddressManager, then it will return the zero address: */
+  /* 0x0000000000000000000000000000000000000000 */
 
 ```
 
-AddressManager: '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089'
+As of Oct. 28 2021, the addresses are:
+
+```json
 
 {
   "L1CrossDomainMessenger":"0x12Acf6E3ca96A60fBa0BBFd14D2Fe0EB6ae47820",

@@ -56,7 +56,7 @@ Only if the centralized exchange supports Boba Network (at writing none of them 
 
 ## Where can I find RPC endpoints and connection details? <a href="038a" id="038a"></a>
 
-Connection details for our Rinkeby network can be found [here](developer-docs/rinkeby-testnet/rinkeby-links.md).
+Connection details for our Rinkeby network can be found [here](developer-docs/005_parameters-rinkeby.md).
 
 ## Are multicall contracts supported on Boba? <a href="038a" id="038a"></a>
 

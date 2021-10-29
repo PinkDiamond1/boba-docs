@@ -6,9 +6,9 @@ description: Fee scheme in Boba Network under OVM 2.0
 
 ## Fee Scheme in OVM 2.0
 
-This page refers to the **new** state of Boba Network after the OVM 2.0 update.&#x20;
+This page refers to the **new** state of Boba Network after the OVM 2.0 update.
 
-You can see how the fee is calculated and deducted [here](transaction-fees-ovm-2.0.md).
+You can see how the fee is calculated and deducted [here](004_transaction-fees-ovm-2.0.md).
 
 ### For backend developers: <a href="for-backend-developers" id="for-backend-developers"></a>
 

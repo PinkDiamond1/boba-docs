@@ -5,7 +5,7 @@ description: Boba user guide on how to bridge with Metamask
 # How To Bridge
 
 {% hint style="info" %}
-**Before getting started , make sure you have enough ETH in your Metamask wallet to approve and send transactions (we recommend 0.05 ETH)**
+**Before getting started, make sure you have enough ETH in your Metamask wallet to approve and send transactions (we recommend 0.05 ETH)**
 {% endhint %}
 
 {% hint style="info" %}
@@ -38,7 +38,7 @@ description: Boba user guide on how to bridge with Metamask
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.07.32.png)
 
-7\) Approve your **spend amount **in Metamask. Don't edit the gas fees, your transaction might fail.
+7\) Approve your **spend amount** in Metamask. Don't edit the gas fees, your transaction might fail.
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.09.45.png)
 
@@ -68,6 +68,6 @@ description: Boba user guide on how to bridge with Metamask
 
 ![](../.gitbook/assets/screen-shot-2021-09-26-at-15.16.29.png)
 
-2\) Follow the following settings
+2\) Follow these settings
 
 ![](<../.gitbook/assets/image (10).png>)
