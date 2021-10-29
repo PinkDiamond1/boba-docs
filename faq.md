@@ -60,6 +60,10 @@ Only if the centralized exchange supports Boba Network (at writing none of them 
 
 Connection details for our Rinkeby network can be found [here](developer-docs/rinkeby-testnet/rinkeby-links.md).
 
+## Are multicall contracts supported on Boba? <a href="038a" id="038a"></a>
+
+Yes, however you will have to deploy your own version.
+
 ## The incentive contract for verification proofs is disabled
 
 In the current release of the Boba Network protocol, there may be rare cases in which the Sequencer submits a state root (transaction result) which is invalid and therefore could be challenged. As a result, we have not yet deployed the [Bond Manager ](https://github.com/omgnetwork/optimism/blob/develop/packages/contracts/contracts/optimistic-ethereum/OVM/verification/OVM\_BondManager.sol)contract which compensates Verifier nodes for gas spent when submitting state root challenges. Verifier nodes in a default configuration do not run the [TypeScript service which submits challenges ](https://github.com/ethereum-optimism/optimism/blob/8d67991aba584c1703692ea46273ea8a1ef45f56/packages/contracts/test/contracts/OVM/verification/OVM\_FraudVerifier.spec.ts)in the event of mismatched state roots. Additionally, our upgrade keys have the ability to directly remove state roots without going through an uncompensated state root challenge.
