@@ -12,11 +12,11 @@ Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom cha
 
 ## FAQs
 
-1. What is the Gas Price on Boba L2?
+1. **What is the Gas Price on Boba L2?**
 
-   The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more 5% in the gas price oracle. For example, if the current `gasPrice` is 5 Gwei, the the next `gasPrice` will not exceed 5.25 Gwei, or be less than 4.75 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 3 to 10 Gwei.
+   The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more than 5% in the gas price oracle. For example, if the current `gasPrice` is 5 Gwei then the next `gasPrice` will be between 4.75 and 5.25 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 3 to 10 Gwei.
 
-2. What are the decimals for tokens on the Boba L2? 
+2. **What are the decimals for tokens on the Boba L2?** 
 
    In general, the decimals on L2 mirror those of L1. You can check decimals using the blockexploer.boba.network, for example:
 
@@ -28,16 +28,16 @@ Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom cha
 
    ```javascript
 
-     const decimals = await this.ERC20_Contract.attach(tokenAddress).connect(this.L2Provider).decimals()
-     //typical values are 18 or, in some rare but important cases, 6
+   const decimals = await this.ERC20_Contract.attach(tokenAddress).connect(this.L2Provider).decimals()
+   //typical values are 18 or, in some rare but important cases, 6
 
    ```
 
-3. How do I bridge funds from L1 to L2?
+3. **How do I bridge funds from L1 to L2?**
 
-   There are two main methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md).
+   There are two methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md).
 
-4. Do you support EIP-2470: Singleton Factory?
+4. **Do you support EIP-2470: Singleton Factory?**
 
    Yes! [ERC-2470](https://eips.ethereum.org/EIPS/eip-2470) is deployed to `0xce0042B868300000d44A59004Da54A005ffdcf9f` on the Boba L2. The address on the Boba L2 is the same as on Ethereum mainnet.
 
