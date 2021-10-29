@@ -10,9 +10,40 @@ Boba Network implemented OVM 2.0 Oct 28th, therefore there are no more custom ch
 **No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
 {% endhint %}
 
+## FAQs
+
+1. What is the Gas Price on Boba L2?
+
+The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more 5% in the gas price oracle. For exammple, if the current `gasPrice` is 20 Gwei, the the next `gasPrice` will not exceed 21 Gwei, or be less than 19 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around `10000000000` Wei aka `10` Gwei aka `0.00000001` ETH. Occasionally, the gas price can spike to as much as 50 Gwei, but (in Oct. 2021) this is still rare.
+
+2. What are the decimals for tokens on the Boba L2? 
+
+In general, the decimals on L2 mirror those of L1. You can check decimals using the blockexploer.boba.network, for example:
+
+`https://blockexplorer.boba.network/tokens/0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc/token-transfers`
+
+Exception: Note that the decimals on Rinkeby are generally 18, whereas on L2 mainnet they mirror the ETH L1 decimals.
+
+You can also check the decimals of course by calling the token contracts:
+
+```javascript
+
+  const decimals = await this.ERC20_Contract.attach(tokenAddress).connect(this.L2Provider).decimals()
+  //typical values are 18 or, in some rare but important cases, 6
+
+```
+
+3. How do I bridge funds from L1 to L2?
+
+There are two main methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md).
+
+4. Do you support EIP-2470: Singleton Factory?
+
+Yes! [ERC-2470](https://eips.ethereum.org/EIPS/eip-2470) is deployed to `0xce0042B868300000d44A59004Da54A005ffdcf9f` on the Boba L2. The address on the Boba L2 is the same as on Ethereum mainnet.
+
 ## Historical Notes for users of OVM 1.0 - the OVM 2.0 Changeset
 
-The v1 to v2 changes reduced the differences between the OVM and EVM so that developers can implement their contracts with mostly just one target in mind, instead of managing OVM idiosyncrasies with separate contracts. Here is the list of key breaking changes to watch for, in case you are used to v1:
+The v1 to v2 changes reduced the differences between the OVM and EVM so that developers can implement their contracts with just one target in mind, instead of managing OVM idiosyncrasies with separate contracts. Here is the list of changes to watch for, in case you are used to v1:
 
 1. Contracts whose source code has not been verified on Etherscan will be wiped out along with their storage.
 2. Contracts whose source code has been verified will be recompiled with the standard Solidity compiler. As a result of this:
@@ -23,7 +54,7 @@ The v1 to v2 changes reduced the differences between the OVM and EVM so that dev
    1. Users will **no longer** be able to transfer and interact with ETH as an ERC20 located at `0x4200000000000000000000000000000000000006`.
    2. Please let us know if you rely on this functionality on Optimistic Ethereum mainnet currently as we will have to migrate those balances to a standard WETH9 contract which will be deployed to a new TBD address
    3. The `Transfer` event currently emitted on ETH fee payment will be removed
-4. Our fee scheme will be altered. [Learn more](fee-scheme-ovm-2.0.md)
+4. Our fee scheme will be altered. [Learn more](003_fee-scheme-ovm-2.0.md)
 5. EOAs will no longer be contract wallets
    1. Currently, every new EOA in Optimistic Ethereum deploys a proxy contract to that address, making every EOA a contract account.
    2. After the upgrade, every known contract account will be reverted to an EOA with no code.
@@ -41,15 +72,12 @@ The v1 to v2 changes reduced the differences between the OVM and EVM so that dev
    7. `BASEFEE` will be unsupported - execution will revert if it is used.
    8. `ORIGIN` will be supported normally.
 8.  Certain OVM system contracts will be wiped from the state. We will remove:
-
-    1. `OVM_ExecutionManager`
-    2. `OVM_SequencerEntrypoint`
-    3. `OVM_StateManager`
-    4. `OVM_StateManagerFactory`
-    5. `OVM_SafetyChecker`
-    6. `OVM_ECDSAContractAccount`
-    7. `OVM_ExecutionManagerWrapper`
-    8. `Lib_AddressManager`
-
+   1. `OVM_ExecutionManager`
+   2. `OVM_SequencerEntrypoint`
+   3. `OVM_StateManager`
+   4. `OVM_StateManagerFactory`
+   5. `OVM_SafetyChecker`
+   6. `OVM_ECDSAContractAccount`
+   7. `OVM_ExecutionManagerWrapper`
     All other OVM pre-deploys will remain at the same addresses as before the re-genesis
 9. `TIMESTAMP` will function the same as before, updating with each new deposit or after 5 minutes if there has not been a deposit. `TIMESTAMP` will still correspond to "Last Finalized L1 Timestamp"
