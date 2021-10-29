@@ -8,10 +8,10 @@ To see examples of how to perform basic operations on Boba v2, please see the re
 
 Below, we provide code snippets for several typical operations on the L2:
 	
-	1. Check the Gas Price
-	2. Estimate the cost of a contract call 
-	3. An L2->L2 transfer
-	4. A 'classic' bridging operation
+1. Check the Gas Price
+2. Estimate the cost of a contract call 
+3. An L2->L2 transfer
+4. A 'classic' bridging operation
 
 Overall, note that from the perspective of solidity code and rpc calls, Boba OVM 2.0 is identical to mainchain in most aspects, so your experience (and code) from mainchain should carry over directly. The main practical differences center on Gas and on cross-chain bridging operations. 
 
