@@ -5,7 +5,7 @@ description: Boba user guide on how to bridge with Metamask
 # How To Bridge
 
 {% hint style="info" %}
-**Before getting started, make sure you have enough ETH in your Metamask wallet to approve and send transactions (we recommend 0.05 ETH)**
+**Before getting started, make sure you have enough ETH in your Metamask wallet to approve and send transactions (we recommend 0.05 ETH).**
 {% endhint %}
 
 {% hint style="info" %}
