@@ -1,5 +1,5 @@
 ---
-description: Deploy your contracts to Boba v2.0 on Rinkeby
+description: Deploy your contracts to Boba on Rinkeby
 ---
 
 # Rinkeby Contract Addresses

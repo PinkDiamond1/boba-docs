@@ -1,5 +1,5 @@
 ---
-description: A collection of links to get started on Boba v2.0 on the Rinkeby testnet
+description: A collection of links to get started on the Boba Rinkeby testnet
 ---
 
 # Rinkeby Links
