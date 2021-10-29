@@ -114,7 +114,7 @@ NOTE: To protect users, *overpaying by more than a 10% percent will also revert 
 
 ```
 
-**Gas Price tolerance band** : The `gasPrice` you use should be **within 10% of the value** reported by `.getGasPrice()`. Let’s say the gasPrice is 100 Gwei. Then, the l2geth will accepts any `gasPrice` between 90 Gwei to 110 Gwei.
+**Gas Price tolerance band** : The `gasPrice` you use should be **within 10% of the value** reported by `.getGasPrice()`. Let’s say the gasPrice is 100 Gwei. Then, the l2geth will accept any `gasPrice` between 90 Gwei to 110 Gwei.
 
 ## 3. An L2->L2 transfer
 
