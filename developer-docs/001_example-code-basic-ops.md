@@ -33,7 +33,7 @@ The Gas Price on L2 changes every **30 seconds**, with some smoothing to reduce 
 
 ```
 
-Typical values are `10000000000` Wei aka `10` Gwei aka `0.00000001` ETH. Occasionally, the gas price can spike to as much as 50 Gwei, but this is rare.
+Typical values are 3 to 10 Gwei.
 
 ## 2. Estimate the cost of a contract call 
 
