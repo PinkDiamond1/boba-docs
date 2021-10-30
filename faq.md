@@ -58,6 +58,10 @@ Only if the centralized exchange supports Boba Network (at writing none of them 
 
 Connection details for our Rinkeby network can be found [here](developer-docs/005\_parameters-rinkeby.md).
 
+Connection details for our mainnet can be found [here](developer-docs/006\_parameters-mainnet.md).
+
+
+
 ## Are multicall contracts supported on Boba? <a href="038a" id="038a"></a>
 
 Yes, however you will have to deploy your own version.
