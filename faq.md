@@ -44,7 +44,7 @@ If your wallet does not support this feature, you will have to connect manually.
 
 ## How do I move assets into or out of Boba Network? <a href="038a" id="038a"></a>
 
-To move assets into or out of an Optimistic Ethereum network you can use the [**Boba Gateway**](https://gateway.boba.network). We have detailed instructions in our [documentation](user-docs/how-to-bridge.md).
+To move assets into or out of an Optimistic Ethereum network you can use the [**Boba Gateway**](https://gateway.boba.network). We have detailed instructions in our [documentation](broken-reference).
 
 ## Can I cancel a withdrawal after it has been submitted? <a href="038a" id="038a"></a>
 
@@ -56,11 +56,15 @@ Only if the centralized exchange supports Boba Network (at writing none of them 
 
 ## Where can I find RPC endpoints and connection details? <a href="038a" id="038a"></a>
 
-Connection details for our Rinkeby network can be found [here](developer-docs/005_parameters-rinkeby.md).
+Connection details for our Rinkeby network can be found [here](developer-docs/005\_parameters-rinkeby.md).
 
 ## Are multicall contracts supported on Boba? <a href="038a" id="038a"></a>
 
 Yes, however you will have to deploy your own version.
+
+## What are the token decimals on L2 Boba? <a href="038a" id="038a"></a>
+
+The token decimals on Boba L2 are the same as on Ethereum L1. So if the token has 6 decimals on L1, it will have 6 decimals on L2.
 
 ## The incentive contract for verification proofs is disabled
 
