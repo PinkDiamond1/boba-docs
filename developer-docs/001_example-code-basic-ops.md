@@ -63,7 +63,7 @@ Like on mainchain, the cost of a L2 transaction is the product of the current ga
   console.log("Approval cost in ETH:", utils.formatEther(approvalCost_BN))
 
   //Current gas price: 10000000000
-  //Approval gas: 141698
+  //Approval gas: 44138
   //Approval cost in ETH: 0.00044138
 
 ```
