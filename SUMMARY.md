@@ -8,6 +8,7 @@
   * [Transaction Fees OVM 2.0](developer-docs/004_transaction-fees-ovm-2.0.md)
   * [Rinkeby Links](developer-docs/005_parameters-rinkeby.md)
   * [Mainnet Links](developer-docs/006_parameters-mainnet.md)
+  * [xDomain transaction Monitoring](developer-docs/007_xdomain-tx-status.md)
 * [User Docs](user-docs/README.md)
   * [How To Bridge](user-docs/how-to-bridge.md)
 * [Bug Bounty Program](bug-bounty.md)

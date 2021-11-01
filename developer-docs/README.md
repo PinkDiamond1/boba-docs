@@ -35,11 +35,22 @@ Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom cha
 
 3. **How do I bridge funds from L1 to L2?**
 
-   There are two methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md).
+   There are two methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md). There is working code [here](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_examples/init-fund-l2).
 
 4. **Do you support EIP-2470: Singleton Factory?**
 
    Yes! [ERC-2470](https://eips.ethereum.org/EIPS/eip-2470) is deployed to `0xce0042B868300000d44A59004Da54A005ffdcf9f` on the Boba L2. The address on the Boba L2 is the same as on Ethereum mainnet.
+
+5. **How do I follow cross domain (xDomain) transactions and their status?**
+
+   There are 4 different mechanisms for following the status of a transaction. 
+
+   1. The Boba Blockexplorer (for L2) and Etherscan (for L1)
+   2. Running a typescript `watcher`
+   3. Using the Boba `watcher-api`
+   4. Third-party analytics
+   
+   These methods are described [here](007_xdomain-tx-status.md).  
 
 ## Historical Notes for users of OVM 1.0 - the OVM 2.0 Changeset
 
