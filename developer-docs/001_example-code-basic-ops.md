@@ -1,26 +1,27 @@
 ---
-description: Learn how to use basic features of Boba (e.g. bridges, basic L2 ops) through examples
+description: >-
+  Learn how to use basic features of Boba (e.g. bridges, basic L2 ops) through
+  examples
 ---
 
-# OVM 2.0 Basic Operations Code examples
+# Basic Operations Examples
 
 To see examples of how to perform basic operations on Boba v2, please see the react code for the [Boba gateway](https://github.com/omgnetwork/optimism-v2/blob/develop/packages/boba/gateway/src/services/networkService.js).
 
 Below, we provide code snippets for several typical operations on the L2:
-	
+
 1. Check the Gas Price
-2. Estimate the cost of a contract call 
+2. Estimate the cost of a contract call
 3. An L2->L2 transfer
 4. A 'classic' bridging operation
 
-Overall, note that from the perspective of solidity code and rpc calls, Boba OVM 2.0 is identical to mainchain in most aspects, so your experience (and code) from mainchain should carry over directly. The main practical differences center on Gas and on cross-chain bridging operations. 
+Overall, note that from the perspective of solidity code and rpc calls, Boba OVM 2.0 is identical to mainchain in most aspects, so your experience (and code) from mainchain should carry over directly. The main practical differences center on Gas and on cross-chain bridging operations.
 
 ## 1. Check the Current Gas Price
 
 The Gas Price on L2 changes every **30 seconds**, with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change of the l2 gas price is 5% in the gas price oracle. Like on mainchain, the current gas price can be obtained via `.getGasPrice()`:
 
 ```javascript
-
   this.L2Provider = new ethers.providers.StaticJsonRpcProvider('mainnet.boba.network')
 
   const gasPrice = await this.L2Provider.getGasPrice()
@@ -30,17 +31,15 @@ The Gas Price on L2 changes every **30 seconds**, with some smoothing to reduce 
 
   console.log("Current gas price", gasPrice.toString())
   //prints: Current gas price: 10000000000
-
 ```
 
 Typical values are 3 to 10 Gwei.
 
-## 2. Estimate the cost of a contract call 
+## 2. Estimate the cost of a contract call
 
 Like on mainchain, the cost of a L2 transaction is the product of the current gas price and the 'complexity' of the contract call, with some calls being much more expensive than others. The contract call complexity is quantified via the `gas`. For example, the cost of an approval on L2 is about 0.0004 ETH, or about $1.70 (Oct. 2021):
 
 ```javascript
-
   const L2ERC20Contract = new ethers.Contract(
     currencyAddress,
     L2ERC20Json.abi,
@@ -65,27 +64,23 @@ Like on mainchain, the cost of a L2 transaction is the product of the current ga
   //Current gas price: 10000000000
   //Approval gas: 44138
   //Approval cost in ETH: 0.00044138
-
 ```
 
-NOTE: The gas for a particular transaction depends both on the nature of the call (e.g. `approve`) and the call parameters, such as the amount (in this case, 1.0 ETH). A common source of reverted transactions is to mis-estimate the gas, such as by calling `.estimateGas()` with a TX generated for a different value. 
+NOTE: The gas for a particular transaction depends both on the nature of the call (e.g. `approve`) and the call parameters, such as the amount (in this case, 1.0 ETH). A common source of reverted transactions is to mis-estimate the gas, such as by calling `.estimateGas()` with a TX generated for a different value.
 
 ```bash
-
   Typical L2 gas values:
 
   Approve 0 ETH:  24866
   Approve 1 ETH:  44138
   Fast Exit:     141698
-
 ```
 
-NOTE: Unlike on L1, on *L2 there is no benefit to paying more* - you just waste ETH. The sequencer operates in first in first serve, and transaction order is determined by the arrival time of your transaction, not by how much you are willing to pay.  
+NOTE: Unlike on L1, on _L2 there is no benefit to paying more_ - you just waste ETH. The sequencer operates in first in first serve, and transaction order is determined by the arrival time of your transaction, not by how much you are willing to pay.
 
-NOTE: To protect users, *overpaying by more than a 10% percent will also revert your transactions*. The core gas price logic is as follows: 
+NOTE: To protect users, _overpaying by more than a 10% percent will also revert your transactions_. The core gas price logic is as follows:
 
 ```javascript
-
   //Core l2 gas price code logic
 
 	fee := new(big.Int).Set(opts.ExpectedGasPrice)
@@ -111,7 +106,6 @@ NOTE: To protect users, *overpaying by more than a 10% percent will also revert 
 			return ErrGasPriceTooHigh
 		}
 	}
-
 ```
 
 **Gas Price tolerance band** : The `gasPrice` you use should be **within 10% of the value** reported by `.getGasPrice()`. Let’s say the gasPrice is 100 Gwei. Then, the l2geth will accept any `gasPrice` between 90 Gwei to 110 Gwei.
@@ -119,7 +113,6 @@ NOTE: To protect users, *overpaying by more than a 10% percent will also revert 
 ## 3. An L2->L2 transfer
 
 ```javascript
-
 //Transfer funds from one account to another, on the L2
 async transfer(address, value_Wei_String, currency) {
 
@@ -160,13 +153,11 @@ async transfer(address, value_Wei_String, currency) {
 	}
 }
 
-
 ```
 
 ## 4. An L1->L2 Classic Bridge Operation
 
 ```javascript
-
   //Move ERC20 Tokens from L1 to L2
   async depositErc20(value_Wei_String, currency, currencyL2) {
 
@@ -212,5 +203,4 @@ async transfer(address, value_Wei_String, currency) {
 	return l2Receipt
     
   }
-
 ```

@@ -2,20 +2,22 @@
 description: A collection of links to get started on Mainnet Boba
 ---
 
-## Mainnet Links and Endpoints
+# Mainnet Links
 
+### Mainnet Links and Endpoints
+
+|                 |                                                                          |
+| --------------- | ------------------------------------------------------------------------ |
 | Mainnet RPC     | [https://mainnet.boba.network](https://mainnet.boba.network)             |
-| --------------- | -------------------------------------------------------------------------|
 | Mainnet ChainID | 288                                                                      |
 | Gateway         | [https://gateway.boba.network](https://gateway.boba.network)             |
 | Blockexplorer   | [https://blockexplorer.boba.network](https://blockexplorer.boba.network) |
 
-## Mainnet Contract and Token Addresses
+### Mainnet Contract and Token Addresses
 
 The `AddressManger` is located at '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089'. The `AddressManager` can be queried for current addresses like this:
 
 ```javascript
-
   this.AddressManager = new ethers.Contract(
     '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089',
     AddressManagerJson.abi,
@@ -29,13 +31,11 @@ The `AddressManger` is located at '0x8376ac6C3f73a25Dd994E0b0669ca7ee0C02F089'. 
   /*********** NOTE *****************/
   /* If the contract is not in the AddressManager, then it will return the zero address: */
   /* 0x0000000000000000000000000000000000000000 */
-
 ```
 
 As of Oct. 28 2021, the addresses are:
 
 ```json
-
 {
   "L1CrossDomainMessenger":"0x12Acf6E3ca96A60fBa0BBFd14D2Fe0EB6ae47820",
   "OVM_L1CrossDomainMessenger":"0x12Acf6E3ca96A60fBa0BBFd14D2Fe0EB6ae47820",
@@ -82,5 +82,4 @@ As of Oct. 28 2021, the addresses are:
   "Proxy__L2LiquidityPool": "0x3A92cA39476fF84Dc579C868D4D7dE125513B034",
   "L1MultiMessageRelayerFast": "0x16650A81cD8CC7e6d132bB98925efDeEA73E0d59"
 }
-
 ```

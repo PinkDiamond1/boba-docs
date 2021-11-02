@@ -2,20 +2,22 @@
 description: A collection of links to get started on Rinkeby Boba
 ---
 
-# Rinkeby Links and Endpoints
+# Rinkeby Links
 
-| Rinkeby RPC     | [https://rinkeby.boba.network](https://rinkeby.boba.network)                             |
+## Rinkeby Links and Endpoints
+
+|                 |                                                                                          |
 | --------------- | ---------------------------------------------------------------------------------------- |
+| Rinkeby RPC     | [https://rinkeby.boba.network](https://rinkeby.boba.network)                             |
 | Rinkeby ChainID | 28                                                                                       |
 | Gateway         | [https://gateway.rinkeby.boba.network](https://gateway.rinkeby.boba.network)             |
 | Blockexplorer   | [https://blockexplorer.rinkeby.boba.network](https://blockexplorer.rinkeby.boba.network) |
 
-# Rinkeby Contract Addresses
+## Rinkeby Contract Addresses
 
 The `AddressManger` is located at '0x93A96D6A5beb1F661cf052722A1424CDDA3e9418'. The `AddressManager` can be queried for current addresses like this:
 
 ```javascript
-
   this.AddressManager = new ethers.Contract(
     '0x93A96D6A5beb1F661cf052722A1424CDDA3e9418',
     AddressManagerJson.abi,
@@ -29,13 +31,11 @@ The `AddressManger` is located at '0x93A96D6A5beb1F661cf052722A1424CDDA3e9418'. 
   /*********** NOTE *****************/
   /* If the contract is not in the AddressManager, then it will return the zero address: */
   /* 0x0000000000000000000000000000000000000000 */
-
 ```
 
 As of Oct. 28 2021, the addresses are:
 
 ```json
-
 {
   "L1CrossDomainMessenger":"0x04059a546419f54db4bfafFae9d4af3b081C2a8D",
   "L1MultiMessageRelayer":"0x5C6263BCAa00C7f5988E148dB3CA178e1262E69f",
@@ -87,5 +87,4 @@ As of Oct. 28 2021, the addresses are:
   "Proxy__L2NFTBridge": "0x92a5dfc88F58A01fB4dBfDccE13368f9a0D418c5",
   "L1MultiMessageRelayerFast": "0xEe4A28080C7785A1F14Bc143A8083b2F02B94f88"
 }
-
 ```
