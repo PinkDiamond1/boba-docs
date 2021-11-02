@@ -4,8 +4,7 @@ description: Using The Graph on Boba
 
 # Using The Graph on Boba
 
-The Graph is indexing protocol for organizing blockchain data and making it easily accessible with GraphQL. You can define contract of interest, set up The Graph to injest 
-events/data that you define, and you can then obtain these data through queries to GraphQL.
+The Graph is an indexing protocol for organizing blockchain data and making it easily accessible (with a service called GraphQL). You can define contract of interest, set up The Graph to injest events/data that you define, and you can then obtain these data through GraphQL.
 
 ## Indexing and Main Endpoints - Boba Graph Node
 
@@ -32,7 +31,7 @@ events/data that you define, and you can then obtain these data through queries 
 
 ## Examples
 
-Subgraph examples are given in the main repo at https://github.com/omgnetwork/optimism-v2/boba_examples/subgraph
+Subgraph examples are given in the main repo at https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph
 
 ## Creating and Deploying Subgrapohs
 
