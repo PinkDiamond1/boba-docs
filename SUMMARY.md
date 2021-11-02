@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 
 * [Boba Network](README.md)
 * [Developer Docs](developer-docs/README.md)
@@ -8,8 +8,9 @@
   * [Transaction Fees OVM 2.0](developer-docs/004\_transaction-fees-ovm-2.0.md)
   * [Rinkeby Links](developer-docs/005\_parameters-rinkeby.md)
   * [Mainnet Links](developer-docs/006\_parameters-mainnet.md)
-  * [Verify Smart Contracts on Boba Explorer](developer-docs/verify-smart-contracts-on-boba-explorer.md)
-  * [xDomain transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
+  * [xDomain Transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
+  * [Verifying contracts on Boba](developer-docs/008_verify-smart-contracts-on-boba-explorer.md)
+  * [Using The Graph on Boba](developer-docs/009_The_Graph.md)
 * [User Docs](user-docs/README.md)
   * [How To Bridge](user-docs/how-to-bridge.md)
 * [Bug Bounty Program](bug-bounty.md)
