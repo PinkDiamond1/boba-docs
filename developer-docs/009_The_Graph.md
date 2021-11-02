@@ -27,11 +27,11 @@ The Graph is an indexing protocol for organizing blockchain data and making it e
 | 8040     | Prometheus metrics                        | /metrics                | https://graph.rinkeby.boba.network:8040                      | Public         |
 
 
-**NOTE - JSON RPC**: The RPC endpoint (https://graph.mainnet.boba.network:8020) is private. To use it, please tell us your IP addresses and we will open it up for you.
+**NOTE - JSON RPC**: The RPC endpoint [https://graph.mainnet.boba.network:8020](https://graph.mainnet.boba.network:8020) is private. To use it, please tell us your IP addresses and we will open it up for you.
 
 ## Examples
 
-Subgraph examples are given in the main repo at https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph
+Subgraph examples are given in the main repo at [https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph](https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph)
 
 ## Creating and Deploying Subgrapohs
 
