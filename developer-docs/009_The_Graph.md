@@ -31,7 +31,7 @@ The Graph is an indexing protocol for organizing blockchain data and making it e
 
 ## Examples
 
-Subgraph examples are given in the main repo at [https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph](https://github.com/omgnetwork/optimism-v2/packages/boba/subgraph)
+Subgraph examples are given in the main repo at [https://github.com/omgnetwork/optimism-v2/tree/develop/packages/boba/subgraph](https://github.com/omgnetwork/optimism-v2/tree/develop/packages/boba/subgraph)
 
 ## Creating and Deploying Subgraphs
 
