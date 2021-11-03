@@ -10,22 +10,21 @@ The Graph is an indexing protocol for organizing blockchain data and making it e
 
 > Mainnet endpoint: https://graph.mainnet.boba.network
 
-| **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
-| -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
-| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.mainnet.boba.network <br />https://graph.mainnet.boba.network:8000 | Public         |
-| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.mainnet.boba.network:8020                      | Private        |
-| 8030     | Subgraph indexing status API              | /graphql                | https://graph.mainnet.boba.network:8030                      | Public         |
-| 8040     | Prometheus metrics                        | /metrics                | https://graph.mainnet.boba.network:8040                      | Public         |
+| **Port** | **Purpose**                                   | **Routes**              | URL                                                                                  | **Permission** |
+| -------- | --------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------ | -------------- |
+| 8000     | GraphQL HTTP server                           | /subgraphs/name/.../... | <p>https://graph.mainnet.boba.network<br>https://graph.mainnet.boba.network:8000</p> | Public         |
+| 8020     | <p>JSON-RPC<br>(for managing deployments)</p> | /                       | https://graph.mainnet.boba.network:8020                                              | Private        |
+| 8030     | Subgraph indexing status API                  | /graphql                | https://graph.mainnet.boba.network:8030                                              | Public         |
+| 8040     | Prometheus metrics                            | /metrics                | https://graph.mainnet.boba.network:8040                                              | Public         |
 
 > Rinkeby endpoint: https://graph.rinkeby.boba.network
 
-| **Port** | **Purpose**                               | **Routes**              | URL                                                          | **Permission** |
-| -------- | ----------------------------------------- | ----------------------- | ------------------------------------------------------------ | -------------- |
-| 8000     | GraphQL HTTP server                       | /subgraphs/name/.../... | https://graph.rinkeby.boba.network <br />https://graph.rinkeby.boba.network:8000 | Public         |
-| 8020     | JSON-RPC<br /> (for managing deployments) | /                       | https://graph.rinkeby.boba.network:8020                      | Private        |
-| 8030     | Subgraph indexing status API              | /graphql                | https://graph.rinkeby.boba.network:8030                      | Public         |
-| 8040     | Prometheus metrics                        | /metrics                | https://graph.rinkeby.boba.network:8040                      | Public         |
-
+| **Port** | **Purpose**                                   | **Routes**              | URL                                                                                  | **Permission** |
+| -------- | --------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------ | -------------- |
+| 8000     | GraphQL HTTP server                           | /subgraphs/name/.../... | <p>https://graph.rinkeby.boba.network<br>https://graph.rinkeby.boba.network:8000</p> | Public         |
+| 8020     | <p>JSON-RPC<br>(for managing deployments)</p> | /                       | https://graph.rinkeby.boba.network:8020                                              | Private        |
+| 8030     | Subgraph indexing status API                  | /graphql                | https://graph.rinkeby.boba.network:8030                                              | Public         |
+| 8040     | Prometheus metrics                            | /metrics                | https://graph.rinkeby.boba.network:8040                                              | Public         |
 
 **NOTE - JSON RPC**: The RPC endpoint [https://graph.mainnet.boba.network:8020](https://graph.mainnet.boba.network:8020) is private. To use it, please tell us your IP addresses and we will open it up for you.
 
@@ -49,4 +48,4 @@ graph deploy --ipfs https://graph.mainnet.boba.network:5001 --node https://graph
 
 ## Issues
 
-If you have issues, contact us on [Discord](https://omg/eco/discord).
+If you have issues, contact us on [Discord](https://omg.eco/discord).
