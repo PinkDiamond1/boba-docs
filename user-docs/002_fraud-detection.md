@@ -8,13 +8,13 @@
 
 # Fraud Detector
 
-Docker scripts and python source code for running a *Verifier*, a *DTL* (data transport layer), and a *fraud-detector* service.
+The `Fraud-Prover` repo [(boba_community/fraud-detector)](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_community/fraud-detector) contains docker scripts and python source code for running a *Verifier*, a *DTL* (data transport layer), and a *fraud-detector* service.
 
 ## 0. Concepts
 
-This repo allows you to: 
+The `Fraud-Prover` repo allows you to: 
 
-1. Run your own Boba geth L2 on your computer. In this case, the geth L2 will run in its `Verifier` mode. In `Verifier` mode, the geth will sync from L1 and use the transaction data from the L1 contracts to compute what the state roots should be, *if the operator is honest*.
+1. Run your own Boba L2 Geth on your computer. In this case, geth will run in its `Verifier` mode. In `Verifier` mode, geth will sync from L1 and use the transaction data from the L1 contracts to compute what the state roots should be, *if the operator is honest*.
 
 2. A separate service, the *fraud-detector*, can then be used to discover potential fraud. Briefly, the fraud detection process consists of requesting a state root from Boba Mainnet L1 and requesting a state root from your Verifier. If those state roots match, then, the operator has been honest. If they do not match, then, that **might** be due to fraud, or, could also indicate indexing or timestamp errors, or chain configuration errors.
 
