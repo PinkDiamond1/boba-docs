@@ -13,6 +13,7 @@
   * [Using The Graph on Boba](developer-docs/009_The_Graph.md)
 * [User Docs](user-docs/README.md)
   * [How To Bridge](user-docs/how-to-bridge.md)
+  * [Fraud Detection](user-docs/002\_fraud-detection.md)
 * [Bug Bounty Program](bug-bounty.md)
 * [FAQ](faq.md)
 * [Telegram Support](https://t.me/bobadev)
