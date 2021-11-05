@@ -1,5 +1,5 @@
 ---
-description: Helping to secure Boba by checking for Operator Fraud
+description: Help secure Boba by checking for Operator Fraud
 ---
 
 # Checking Boba Mainnet for Fraud
@@ -105,7 +105,7 @@ fraud-detector_1   | INFO 20211105T173626 74 13508337 0xd05bfa4e2269e584b95348b0
 
 ```
 
-At that point, the `Fraud Detector` can compare the public state roots (deposited into Ethereum miannet by the Boba L2) with the state roots that you have computed:
+At that point, the `Fraud Detector` can compare the public state roots (deposited into Ethereum Mainnet by Boba Network) with the state roots that you have computed:
 
 ```bash
 
