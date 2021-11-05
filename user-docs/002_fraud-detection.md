@@ -1,3 +1,7 @@
+---
+description: Helping to secure Boba by checking for Operator Fraud
+---
+
 # Checking Boba Mainnet for Fraud
 
 - [Fraud Detector](#fraud-detector)
@@ -8,15 +12,15 @@
 
 # Fraud Detector
 
-The `Fraud-Prover` repo [(boba_community/fraud-detector)](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_community/fraud-detector) contains docker scripts and python source code for running a *Verifier*, a *DTL* (data transport layer), and a *fraud-detector* service.
+The `Fraud-Detector` repo [(boba_community/fraud-detector)](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_community/fraud-detector) contains docker scripts and python source code for running a *Verifier*, a *DTL* (data transport layer), and a *fraud-detector* service.
 
 ## 0. Concepts
 
-The `Fraud-Prover` repo allows you to: 
+The `Fraud-Detector` repo allows you to: 
 
 1. Run your own Boba L2 Geth on your computer. In this case, geth will run in its `Verifier` mode. In `Verifier` mode, geth will sync from L1 and use the transaction data from the L1 contracts to compute what the state roots should be, *if the operator is honest*.
 
-2. A separate service, the *fraud-detector*, can then be used to discover potential fraud. Briefly, the fraud detection process consists of requesting a state root from Boba Mainnet L1 and requesting a state root from your Verifier. If those state roots match, then, the operator has been honest. If they do not match, then, that **might** be due to fraud, or, could also indicate indexing or timestamp errors, or chain configuration errors.
+2. A separate service, the *fraud-detector*, can then be used to discover potential fraud. Briefly, the fraud detection process consists of requesting a state root from Boba Mainnet and requesting a state root from your Verifier. If those state roots match, then, the operator has been honest. If they do not match, then, that **might** be due to fraud, or, could also indicate indexing or timestamp errors, or chain configuration errors.
 
 The central idea is that if two (or more) systems look at the same transactions, then they should all generate the same state roots. If they don't, then there is a problem somewhere. Fundamentally, the security of rollups has little to do with math or cryptography - rather, security arises from the operator publicly depositing transactions and their corresponding state roots, and then, **having many independent nodes check those data for possible discrepancies**.
 
@@ -28,7 +32,7 @@ The central idea is that if two (or more) systems look at the same transactions,
 
 ## 2. What do when you discover a state root mismatch
 
-Congratulations! The security of the L2 depends on community monitoring of the operator's actions. If you have discovered a state root mismatch, please file a GitHub issue (https://github.com/omgnetwork/optimism-v2/issues). We should have a good response / clarification for you quickly. In the future, with the Boba governance token, additional mechanisms will be released to incentivize and reward community monitoring of the Boba L2.  
+Congratulations! The security of the L2 depends on community monitoring of the operator's actions. If you have discovered a state root mismatch, please file a GitHub issue (https://github.com/omgnetwork/optimism-v2/issues). We should have a good response / clarification for you quickly. In the future, with the Boba governance token, additional mechanisms will be released to incentivize and reward community monitoring of the Boba Network.  
 
 ## 3. Running the Fraud Detector, the Verifier, and the Data Transport Layer (DTL)
 
@@ -112,7 +116,7 @@ fraud-detector_1   | INFO 20211105T173626 79 13508337
 
 ```
 
-If all three of these roots agree, then Boba Mainnet has been operating truthfully up to that block. If the `Fraud-Detector` find a mismatch, it will log that problem for you. Once the `Fraud-Detector` has checked all the historical state roots, it will wait for new blocks to be written by Boba Mainnet and check those:
+If all three of these roots agree, Boba Mainnet has been operating truthfully up to that block. If the `Fraud-Detector` finds a mismatch, it will log that problem for you. Once the `Fraud-Detector` has checked all the historical state roots, it will wait for new blocks to be written by Boba Mainnet and check those:
 
 ```bash
 
