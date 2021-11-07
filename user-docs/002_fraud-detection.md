@@ -38,6 +38,13 @@ Congratulations! The security of the L2 depends on community monitoring of the o
 
 **Requirements**: you will need a command line and Docker. Before filing GitHub issues, please make sure Docker is installed and _running_.
 
+```
+$ git clone git@github.com:omgnetwork/optimism-v2.git
+$ cd optimism-v2
+$ yarn
+$ yarn build
+```
+
 **Open a terminal window**. Add your Infura key to `/deployments/mainnet/env`. If you do not have an Infura key, you can obtain one for free from [Infura](https://infura.io).
 
 ```bash
@@ -52,10 +59,6 @@ L2_CHAIN_ID=288
 ```
 
 Then, build the needed Docker images:
-
-```
-yarn build
-```
 
 ```
 docker-compose -f docker-compose-fraud-detector.yml --env-file deployments/local/env build
