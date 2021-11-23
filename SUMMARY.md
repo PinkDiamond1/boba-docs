@@ -1,4 +1,4 @@
-# Table of Contents
+# Table of contents
 
 * [Boba Network](README.md)
 * [Developer Docs](developer-docs/README.md)
@@ -9,8 +9,11 @@
   * [Rinkeby Links](developer-docs/005\_parameters-rinkeby.md)
   * [Mainnet Links](developer-docs/006\_parameters-mainnet.md)
   * [xDomain Transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
-  * [Verifying contracts on Boba](developer-docs/008_verify-smart-contracts-on-boba-explorer.md)
-  * [Using The Graph on Boba](developer-docs/009_The_Graph.md)
+  * [Verifying contracts on Boba](developer-docs/008\_verify-smart-contracts-on-boba-explorer.md)
+  * [Using The Graph on Boba](developer-docs/009\_The\_Graph.md)
+* [Price Oracles](price-oracles/README.md)
+  * [Witnet](price-oracles/witnet.md)
+  * [Band](price-oracles/band.md)
 * [User Docs](user-docs/README.md)
   * [How To Bridge](user-docs/how-to-bridge.md)
   * [Fraud Detection](user-docs/002\_fraud-detection.md)
