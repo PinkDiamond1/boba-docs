@@ -12,6 +12,7 @@ description: A collection of links to get started on Mainnet Boba
 | Mainnet ChainID | 288                                                                      |
 | Gateway         | [https://gateway.boba.network](https://gateway.boba.network)             |
 | Blockexplorer   | [https://blockexplorer.boba.network](https://blockexplorer.boba.network) |
+| Websocket       | [wss://wss.mainnet.boba.network](wss://wss.mainnet.boba.network)         |
 
 ### Mainnet Contract and Token Addresses
 
