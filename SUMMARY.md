@@ -8,7 +8,7 @@
   * [Transaction Fees OVM 2.0](developer-docs/004\_transaction-fees-ovm-2.0.md)
   * [Rinkeby Links](developer-docs/005\_parameters-rinkeby.md)
   * [Mainnet Links](developer-docs/006\_parameters-mainnet.md)
-  * [Boba local stack](developer-docs/boba-local-stack.md)
+  * [Boba Local Stack](developer-docs/boba-local-stack.md)
   * [xDomain Transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
   * [Verifying contracts on Boba](developer-docs/008\_verify-smart-contracts-on-boba-explorer.md)
   * [Using The Graph on Boba](developer-docs/009\_The\_Graph.md)
