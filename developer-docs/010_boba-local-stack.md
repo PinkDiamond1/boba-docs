@@ -15,7 +15,9 @@ description: Learn how to run the Boba stack locally
 
 ### Basics
 
-**Note: this is only relevant to developers who wish to work on Boba core services. For most test uses, it's simpler to use **[**https://rinkeby.boba.network**](https://rinkeby.boba.network).
+**Note: this is only relevant to developers who wish to work on Boba core services**. 
+
+For most test uses, it's simpler to use [https://rinkeby.boba.network](https://rinkeby.boba.network).
 
 Clone the repository, open it, and install nodejs packages with `yarn`:
 

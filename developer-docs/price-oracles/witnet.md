@@ -16,8 +16,6 @@ description: A collection of contract addresses for the Witnet price oracles on 
 
 &#x20;   \- OmgUsdtPriceFeed: \[0xD7f7933992c25A504e9Ddf7e76a3c1D6c432b25D]\([https://blockexplorer.boba.network/address/0xD7f7933992c25A504e9Ddf7e76a3c1D6c432b25D](https://blockexplorer.boba.network/address/0xD7f7933992c25A504e9Ddf7e76a3c1D6c432b25D))
 
-
-
 **Boba Rinkeby Price Feeds:**
 
 &#x20;   \- BtcUsdPriceFeed: \[0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0]\([https://blockexplorer.rinkeby.boba.network/address/0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0](https://blockexplorer.rinkeby.boba.network/address/0xeD074DA2A76FD2Ca90C1508930b4FB4420e413B0))
