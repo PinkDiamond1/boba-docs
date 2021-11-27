@@ -2,11 +2,13 @@
 description: Learn how to verify smart contracts on Boba
 ---
 
-# Verify Smart Contracts on Boba Explorer
+# Verifying contracts on Boba
 
 The Boba Explorer supports verifying smart contracts.
 
 The Mainnet Boba Explorer is [here](https://blockexplorer.boba.network) and the Rinkeby Testnet Explorer is [here](https://blockexplorer.rinkeby.boba.network).
+
+Take note that you can also verify contracts via [Sourcify](https://sourcify.dev).
 
 ## Steps
 
