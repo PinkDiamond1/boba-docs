@@ -1,4 +1,4 @@
-# Table of contents
+# Table of Contents
 
 * [Boba Network](README.md)
 * [Developer Docs](developer-docs/README.md)
@@ -8,11 +8,11 @@
   * [Transaction Fees OVM 2.0](developer-docs/004\_transaction-fees-ovm-2.0.md)
   * [Rinkeby Links](developer-docs/005\_parameters-rinkeby.md)
   * [Mainnet Links](developer-docs/006\_parameters-mainnet.md)
-  * [Boba Local Node](developer-docs/boba-local-node.md)
-  * [Boba Local Stack](developer-docs/boba-local-stack.md)
   * [xDomain Transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
   * [Verifying contracts on Boba](developer-docs/008\_verify-smart-contracts-on-boba-explorer.md)
   * [Using The Graph on Boba](developer-docs/009\_The\_Graph.md)
+  * [Boba Development Stack](developer-docs/010\_boba-local-stack.md)
+  * [Boba Node](developer-docs/011\_running-replica-node.md)
   * [Price Oracles](developer-docs/price-oracles/README.md)
     * [Witnet](developer-docs/price-oracles/witnet.md)
     * [Band](developer-docs/price-oracles/band.md)

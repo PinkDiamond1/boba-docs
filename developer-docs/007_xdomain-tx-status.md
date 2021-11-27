@@ -1,3 +1,7 @@
+---
+description: How to monitor transaction status
+---
+
 # Transaction Status and Verification
 
 There are 4 different mechanisms for following the status of a transaction. 

@@ -1,17 +1,17 @@
 ---
-description: Learn how to run the Boba stack locally
+description: Learn how to run the Boba development stack
 ---
 
-# Boba local stack
+# Boba Development Stack
 
-## Running the Boba stack locally
+## Running the Boba development stack
 
-* [Running the Boba stack locally](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#running-the-boba-stack-locally)
-  * [Basics](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#basics)
-  * [Spinning up the stack](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#spinning-up-the-stack)
-    * [Helpful commands](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#helpful-commands)
-    * [Running unit tests](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#running-unit-tests)
-    * [Running integration tests](https://github.com/omgnetwork/optimism-v2/blob/develop/boba\_documentation/Quickstart\_Local\_Boba.md#running-integration-tests)
+* [Running the Boba stack locally](010\_boba-local-stack.md#running-the-boba-stack-locally)
+  * [Basics](010\_boba-local-stack.md#basics)
+  * [Spinning up the stack](010\_boba-local-stack.md#spinning-up-the-stack)
+    * [Helpful commands](010\_boba-local-stack.md#helpful-commands)
+    * [Running unit tests](010\_boba-local-stack.md#running-unit-tests)
+    * [Running integration tests](010\_boba-local-stack.md#running-integration-tests)
 
 ### Basics
 

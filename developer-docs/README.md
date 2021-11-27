@@ -14,7 +14,7 @@ Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom cha
 
 1. **What is the Gas Price on Boba L2?**
 
-   The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more than 5% in the gas price oracle. For example, if the current `gasPrice` is 5 Gwei then the next `gasPrice` will be between 4.75 and 5.25 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 3 to 10 Gwei.
+   The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more than 5% in the gas price oracle. For example, if the current `gasPrice` is 10 Gwei then the next `gasPrice` will be between 9.5 and 10.5 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 10 Gwei.
 
 2. **What are the decimals for tokens on the Boba L2?** 
 

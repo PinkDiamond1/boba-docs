@@ -1,4 +1,8 @@
-# Running a Boba node (replica)
+---
+description: Learn how to run a Boba node (replica)
+---
+
+# Boba node (replica)
 
 The [boba_community/boba-node](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_community/boba-node) repo runs a replica of the Boba L2geth, which is useful for generating analytics for blockexplorers and other specialized use cases.
 
