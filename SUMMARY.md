@@ -10,7 +10,7 @@
   * [Mainnet Links](developer-docs/006\_parameters-mainnet.md)
   * [xDomain Transaction Monitoring](developer-docs/007\_xdomain-tx-status.md)
   * [Verifying contracts on Boba](developer-docs/008\_verify-smart-contracts-on-boba-explorer.md)
-  * [Using The Graph on Boba](developer-docs/009\_The\_Graph.md)
+  * [Using The Graph on Boba](developer-docs/009\_The-Graph.md)
   * [Boba Development Stack](developer-docs/010\_boba-local-stack.md)
   * [Boba Node](developer-docs/011\_running-replica-node.md)
   * [Price Oracles](developer-docs/price-oracles/README.md)
