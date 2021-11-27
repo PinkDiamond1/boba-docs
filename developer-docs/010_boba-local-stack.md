@@ -6,13 +6,6 @@ description: Learn how to run the Boba development stack
 
 ## Running the Boba development stack
 
-* [Running the Boba stack locally](010\_boba-local-stack.md#running-the-boba-stack-locally)
-  * [Basics](010\_boba-local-stack.md#basics)
-  * [Spinning up the stack](010\_boba-local-stack.md#spinning-up-the-stack)
-    * [Helpful commands](010\_boba-local-stack.md#helpful-commands)
-    * [Running unit tests](010\_boba-local-stack.md#running-unit-tests)
-    * [Running integration tests](010\_boba-local-stack.md#running-integration-tests)
-
 ### Basics
 
 **Note: this is only relevant to developers who wish to work on Boba core services**. 
