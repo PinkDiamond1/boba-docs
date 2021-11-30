@@ -2,55 +2,43 @@
 description: Learn more about the Boba Network and OVM 2.0
 ---
 
-# OVM 2.0
-
-{% hint style="info" %}
-**!!! Important Update !!!**\
-Boba Network implemented OVM 2.0 on Oct. 28th 2021, therefore no more custom changes are needed for L1 contracts to be deployed to Boba. 
-**No more code re-factoring is required to migrate to Boba Network with OVM 2.0**
-{% endhint %}
+# Developer Docs
 
 ## FAQs
 
-1. **What is the Gas Price on Boba L2?**
+1.  **What is the Gas Price on Boba L2?**
 
-   The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more than 5% in the gas price oracle. For example, if the current `gasPrice` is 10 Gwei then the next `gasPrice` will be between 9.5 and 10.5 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 10 Gwei.
+    The Gas Price on L2 changes every **30 seconds** with some smoothing to reduce sharp discontinuities in the price from one moment to the next. The maximum percentage change from one value to another is capped to not more than 5% in the gas price oracle. For example, if the current `gasPrice` is 10 Gwei then the next `gasPrice` will be between 9.5 and 10.5 Gwei. Like on mainchain, the current gas price can be obtained via `.getGasPrice()` and is typically around 10 Gwei.
+2.  **What are the decimals for tokens on the Boba L2?**
 
-2. **What are the decimals for tokens on the Boba L2?** 
+    In general, the decimals on L2 mirror those of L1. You can check decimals using the blockexploer.boba.network, for example:
 
-   In general, the decimals on L2 mirror those of L1. You can check decimals using the blockexploer.boba.network, for example:
+    `https://blockexplorer.boba.network/tokens/0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc/token-transfers`
 
-   `https://blockexplorer.boba.network/tokens/0x66a2A913e447d6b4BF33EFbec43aAeF87890FBbc/token-transfers`
+    Exception: Note that the decimals on Rinkeby are generally 18, whereas on L2 mainnet they mirror the ETH L1 decimals.
 
-   Exception: Note that the decimals on Rinkeby are generally 18, whereas on L2 mainnet they mirror the ETH L1 decimals.
+    You can also check the decimals of course by calling the token contracts:
 
-   You can also check the decimals of course by calling the token contracts:
+    ```javascript
+    const decimals = await this.ERC20_Contract.attach(tokenAddress).connect(this.L2Provider).decimals()
+    //typical values are 18 or, in some rare but important cases, 6
+    ```
+3.  **How do I bridge funds from L1 to L2?**
 
-   ```javascript
+    There are two methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001\_example-code-basic-ops.md). There is working code [here](https://github.com/omgnetwork/optimism-v2/tree/develop/boba\_examples/init-fund-l2).
+4.  **Do you support EIP-2470: Singleton Factory?**
 
-   const decimals = await this.ERC20_Contract.attach(tokenAddress).connect(this.L2Provider).decimals()
-   //typical values are 18 or, in some rare but important cases, 6
+    Yes! [ERC-2470](https://eips.ethereum.org/EIPS/eip-2470) is deployed to `0xce0042B868300000d44A59004Da54A005ffdcf9f` on the Boba L2. The address on the Boba L2 is the same as on Ethereum mainnet.
+5.  **How do I follow cross domain (xDomain) transactions and their status?**
 
-   ```
+    There are 4 different mechanisms for following the status of a transaction.
 
-3. **How do I bridge funds from L1 to L2?**
+    1. The Boba Blockexplorer (for L2) and Etherscan (for L1)
+    2. Running a typescript `watcher`
+    3. Using the Boba `watcher-api`
+    4. Third-party analytics
 
-   There are two methods, the **classical bridge** and the **fast bridge**. You can see an example of the [classical bridge here](001_example-code-basic-ops.md). There is working code [here](https://github.com/omgnetwork/optimism-v2/tree/develop/boba_examples/init-fund-l2).
-
-4. **Do you support EIP-2470: Singleton Factory?**
-
-   Yes! [ERC-2470](https://eips.ethereum.org/EIPS/eip-2470) is deployed to `0xce0042B868300000d44A59004Da54A005ffdcf9f` on the Boba L2. The address on the Boba L2 is the same as on Ethereum mainnet.
-
-5. **How do I follow cross domain (xDomain) transactions and their status?**
-
-   There are 4 different mechanisms for following the status of a transaction. 
-
-   1. The Boba Blockexplorer (for L2) and Etherscan (for L1)
-   2. Running a typescript `watcher`
-   3. Using the Boba `watcher-api`
-   4. Third-party analytics
-   
-   These methods are described [here](007_xdomain-tx-status.md).  
+    These methods are described [here](007\_xdomain-tx-status.md).
 
 ## Historical Notes for users of OVM 1.0 - the OVM 2.0 Changeset
 
@@ -65,7 +53,7 @@ The v1 to v2 changes reduced the differences between the OVM and EVM so that dev
    1. Users will **no longer** be able to transfer and interact with ETH as an ERC20 located at `0x4200000000000000000000000000000000000006`.
    2. Please let us know if you rely on this functionality on Optimistic Ethereum mainnet currently as we will have to migrate those balances to a standard WETH9 contract which will be deployed to a new TBD address
    3. The `Transfer` event currently emitted on ETH fee payment will be removed
-4. Our fee scheme will be altered. [Learn more](003_fee-scheme-ovm-2.0.md)
+4. Our fee scheme will be altered. [Learn more](003\_fee-scheme-ovm-2.0.md)
 5. EOAs will no longer be contract wallets
    1. Currently, every new EOA in Optimistic Ethereum deploys a proxy contract to that address, making every EOA a contract account.
    2. After the upgrade, every known contract account will be reverted to an EOA with no code.
@@ -82,13 +70,12 @@ The v1 to v2 changes reduced the differences between the OVM and EVM so that dev
    6. `GASPRICE` will now return the l2GasPrice
    7. `BASEFEE` will be unsupported - execution will revert if it is used.
    8. `ORIGIN` will be supported normally.
-8.  Certain OVM system contracts will be wiped from the state. We will remove:
-   1. `OVM_ExecutionManager`
-   2. `OVM_SequencerEntrypoint`
-   3. `OVM_StateManager`
-   4. `OVM_StateManagerFactory`
-   5. `OVM_SafetyChecker`
-   6. `OVM_ECDSAContractAccount`
-   7. `OVM_ExecutionManagerWrapper`
-    All other OVM pre-deploys will remain at the same addresses as before the re-genesis
-9. `TIMESTAMP` will function the same as before, updating with each new deposit or after 5 minutes if there has not been a deposit. `TIMESTAMP` will still correspond to "Last Finalized L1 Timestamp"
+8. Certain OVM system contracts will be wiped from the state. We will remove:
+9. `OVM_ExecutionManager`
+10. `OVM_SequencerEntrypoint`
+11. `OVM_StateManager`
+12. `OVM_StateManagerFactory`
+13. `OVM_SafetyChecker`
+14. `OVM_ECDSAContractAccount`
+15. `OVM_ExecutionManagerWrapper` All other OVM pre-deploys will remain at the same addresses as before the re-genesis
+16. `TIMESTAMP` will function the same as before, updating with each new deposit or after 5 minutes if there has not been a deposit. `TIMESTAMP` will still correspond to "Last Finalized L1 Timestamp"
