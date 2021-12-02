@@ -204,3 +204,34 @@ async transfer(address, value_Wei_String, currency) {
     
   }
 ```
+
+
+
+## 5.  Accessing latest L1 Block number
+
+{% hint style="info" %}
+NOTICE
+
+The hex value that corresponds to the `L1BLOCKNUMBER` opcode (`0x4B`) may be changed in the future (pending further discussion). **We strongly discourage direct use of this opcode within your contracts.** Instead, if you want to access the latest L1 block number, please use the `OVM_L1BlockNumber` contract as described below.
+{% endhint %}
+
+The block number of the latest L1 block seen by the L2 system can be accessed via the `L1BLOCKNUMBER` opcode. Solidity doesn't make it easy to use non-standard opcodes, so we've created a simple contract located at [`0x4200000000000000000000000000000000000013` (opens new window)](https://optimistic.etherscan.io/address/0x4200000000000000000000000000000000000013)that will allow you to trigger this opcode.
+
+You can use this contract as follows:
+
+```
+import { iOVM_L1BlockNumber } from "@eth-optimism/contracts/L2/predeploys/iOVM_L1BlockNumber.sol";
+import { Lib_PredeployAddresses } from "@eth-optimism/contracts/libraries/constants/Lib_PredeployAddresses.sol";
+
+contract MyContract {
+   function myFunction() public {
+      // ... your code here ...
+
+      uint256 l1BlockNumber = iOVM_L1BlockNumber(
+         Lib_PredeployAddresses.L1_BLOCK_NUMBER // located at 0x4200000000000000000000000000000000000013
+      ).getL1BlockNumber();
+
+      // ... your code here ...
+   }
+}
+```
