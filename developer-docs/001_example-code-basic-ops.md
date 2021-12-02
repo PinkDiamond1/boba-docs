@@ -235,3 +235,19 @@ contract MyContract {
    }
 }
 ```
+
+### Block Numbers and Timestamps <a href="#block-numbers-and-timestamps" id="block-numbers-and-timestamps"></a>
+
+#### Block production is not constant <a href="#block-production-is-not-constant" id="block-production-is-not-constant"></a>
+
+On Ethereum, the `NUMBER` opcode (`block.number` in Solidity) corresponds to the current Ethereum block number. Similarly, in Boba Network, `block.number` corresponds to the current L2 block number. However, as of the OVM 2.0 release of Optimistic Ethereum (Nov. 2021), **each transaction on L2 is placed in a separate block and blocks are NOT produced at a constant rate.**
+
+This is important because it means that `block.number` is currently NOT a reliable source of timing information. If you want access to the current time, you should use `block.timestamp` (the `TIMESTAMP` opcode) instead.
+
+#### Timestamp lags by up to 15 minutes <a href="#timestamp-lags-by-up-to-15-minutes" id="timestamp-lags-by-up-to-15-minutes"></a>
+
+Note that `block.timestamp` is pulled automatically from the latest L1 block seen by the L2 system. L2 currently waits for about 15 minutes (\~50 confirmations) before the L1 block is accepted. As a result, the timestamp may lag behind the current time by up to 15 minutes.
+
+
+
+\
