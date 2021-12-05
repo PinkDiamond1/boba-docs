@@ -14,7 +14,7 @@ Boba Network is an Optimistic Rollup that combines the great open source work do
 Boba is maintained by the [Enya](https://enya.ai) team.
 
 {% hint style="info" %}
-Our documentation is a work in progress. If you have questions or feel like something is missing check out our [Discord server](https://omg.eco/support) where we are actively responding, or [open an issue](https://github.com/omgnetwork) in the GitHub repo for this site.
+Our documentation is a work in progress. If you have questions or feel like something is missing check out our [Discord server](https://omg.eco/support) where we are actively responding, or [open an issue](https://github.com/omgnetwork/optimism-v2/issues) in the GitHub repo for this site.
 {% endhint %}
 
 ### Direct Support
