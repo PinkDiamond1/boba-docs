@@ -6,7 +6,7 @@ description: Learn how to import your L2 NFTs to your Boba Gateway Wallet
 
 ## Adding L2 native NFTs to your wallet
 
-On the [Gateway](https://gateway.boba.network) click on NFT and paste the smart contract of your NFT \
+On the [Gateway](https://gateway.boba.network) click on NFT and paste the smart contract address of your NFT \
 \
 ![](<../.gitbook/assets/image (16).png>)\
 \
