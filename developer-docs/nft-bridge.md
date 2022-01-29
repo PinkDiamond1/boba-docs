@@ -161,13 +161,14 @@ await tx.wait()
 
 #### Mainnet
 
-| Contract Name | Contract Address |
-| ------------- | ---------------- |
-|               |                  |
+| Contract Name        | Contract Address                           |
+| -------------------- | ------------------------------------------ |
+| Proxy\_\_L1NFTBridge | 0xC891F466e53f40603250837282eAE4e22aD5b088 |
+| Proxy\_\_L2NFTBridge | 0xFB823b65D0Dc219fdC0d759172D1E098dA32f9eb |
 
 #### Rinkeby
 
-| Contract Name        | Contract Address                           |
-| -------------------- | ------------------------------------------ |
-| Proxy\_\_L1NFTBridge | 0x01F5d5D6de3a8c7A157B22FD331A1F177b7bE043 |
-| Proxy\_\_L2NFTBridge | 0x5E368E9dce71B624D7DdB155f360E7A4969eB7aA |
+| Contract Name        | Contract Address                                    |
+| -------------------- | --------------------------------------------------- |
+| Proxy\_\_L1NFTBridge | 0x01F5d5D0x01F5d5D6de3a8c7A157B22FD331A1F177b7bE043 |
+| Proxy\_\_L2NFTBridge | 0x5E368E9dce71B624D7DdB155f360E7A4969eB7aA          |
