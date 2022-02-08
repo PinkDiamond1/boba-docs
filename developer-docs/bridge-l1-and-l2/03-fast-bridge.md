@@ -46,7 +46,7 @@ await depositERC20Tx.wait()
 // We defined that ETH address is 0x0000000000000000000000000000000000000000 on L1
 const depositETHTx = await Proxy__L1LiquidityPool.clientDepositL1(
   depositAmount,
-	'0x0000000000000000000000000000000000000000', // ETH Address
+  '0x0000000000000000000000000000000000000000', // ETH Address
   {value: depositAmount}
 )
 await depositETHTx.wait()
@@ -87,7 +87,7 @@ await depositERC20Tx.wait()
 // ETH address is 0x4200000000000000000000000000000000000006 on L2
 const depositETHTx = await Proxy__L2LiquidityPool.clientDepositL2(
   depositAmount,
-	'0x4200000000000000000000000000000000000006', // ETH Address
+  '0x4200000000000000000000000000000000000006', // ETH Address
   {value: depositAmount}
 )
 await depositETHTx.wait()

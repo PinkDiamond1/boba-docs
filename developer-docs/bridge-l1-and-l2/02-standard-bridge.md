@@ -36,7 +36,7 @@ await approveTx.wait()
 
 // Deposit ERC20
 const depositTx = await Proxy__L1StandardBridge.depositERC20(
-	l1TokenAddress,
+  l1TokenAddress,
   l2TokenAddress,
   depositAmount,
   1300000, // l2 gas limit
@@ -46,7 +46,7 @@ await depositTx.wait()
 
 // Deposit ERC20 to another l2 wallet
 const depositToTx = await Proxy__L1StandardBridge.depositERC20To(
-	l1TokenAddress,
+  l1TokenAddress,
   l2TokenAddress,
   TargetAddress, // l2 target address
   depositAmount,
@@ -58,7 +58,7 @@ await depositToTx.wait()
 
 ### Deposit ETH
 
-ETH deposits into L2 can be triggered via the `depositETH` and `depositETHTo` functions on the [`L1StandardBridge` (opens new window)](https://github.com/omgnetwork/optimism-v2/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol). ETH deposits can alternatively be triggered by sending ETH directly to the `L1StandardBridge`. Once your deposit is detected and finalized on Optimism, your account will be funded with the corresponding amount of ETH on L2.
+ETH deposits into L2 can be triggered via the `depositETH` and `depositETHTo` functions on the [`L1StandardBridge` (opens new window)](https://github.com/omgnetwork/optimism-v2/blob/develop/packages/contracts/contracts/L1/messaging/IL1StandardBridge.sol). ETH deposits can alternatively be triggered by sending ETH directly to the `L1StandardBridge`. Once your deposit is detected and finalized on Boba Network, your account will be funded with the corresponding amount of ETH on L2.
 
 ```js
 const PRIVATE_KEY, L1_NODE_WEB3_URL, PROXY_L1_STANDARD_BRIDGE_ADDRESS
@@ -112,7 +112,7 @@ const Proxy__L2StandardBridge = new ethers.Contract(
 // Withdraw ETH
 // ETH address is 0x4200000000000000000000000000000000000006 on L2
 const depositTx = await Proxy__L2StandardBridge.withdraw(
-	'0x4200000000000000000000000000000000000006', // l2 token address
+  '0x4200000000000000000000000000000000000006', // l2 token address
   ETHAmount,
   9999999, // l1 gas limit
   ethers.utils.formatBytes32String(new Date().getTime().toString()), // byte data
@@ -123,7 +123,7 @@ await depositTx.wait()
 // Withdraw ETH to another l1 wallet
 // ETH address is 0x4200000000000000000000000000000000000006 on L2
 const depositToTx = await Proxy__L2StandardBridge.withdrawTo(
-	'0x4200000000000000000000000000000000000006', // l2 token address
+  '0x4200000000000000000000000000000000000006', // l2 token address
   TargetAddress, // l1 target address
   ETHAmount,
   9999999, // l1 gas limit
@@ -138,7 +138,7 @@ await approveTx.wait()
 
 // Withdraw ERC20
 const depositTx = await Proxy__L2StandardBridge.withdraw(
-	l2TokenAddress // l2 token address
+  l2TokenAddress // l2 token address
   exitAmount,
   9999999, // l1 gas limit
   ethers.utils.formatBytes32String(new Date().getTime().toString()), // byte data
@@ -147,7 +147,7 @@ await depositTx.wait()
 
 // Withdraw ERC20 to another l1 wallet
 const depositToTx = await Proxy__L2StandardBridge.withdrawTo(
-	l2TokenAddress, // l2 token address
+  l2TokenAddress, // l2 token address
   TargetAddress, // l1 target address
   exitAmount,
   9999999, // l1 gas limit
