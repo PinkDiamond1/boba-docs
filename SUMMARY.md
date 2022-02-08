@@ -2,6 +2,7 @@
 
 * [Boba Network](README.md)
 * [Developer Docs](developer-docs/README.md)
+  * [Exchange Integration](developer-docs/exchange-integration.md)
   * [Basic Operations Examples](developer-docs/001\_example-code-basic-ops.md)
   * [Contract Deployment Examples](developer-docs/002\_example-contract-deployments.md)
   * [Fee Scheme OVM 2.0](developer-docs/003\_fee-scheme-ovm-2.0.md)
