@@ -31,7 +31,7 @@ $ yarn install
 $ yarn build
 ```
 
-Then, add your Infura key to `boba_community/boba-node/docker-compose-replica.yaml`. If you do not have an Infura key, you can obtain one for free from [Infura](https://infura.io). 
+Then, add your Infura key to `boba_community/boba-node/docker-compose.yaml`. If you do not have an Infura key, you can obtain one for free from [Infura](https://infura.io). 
 
 ```bash
 x-l1_rpc_dtl: &l1_rpc_dtl
@@ -45,7 +45,7 @@ Next, build the packages:
 
 ```bash
 
-docker-compose -f docker-compose-replica.yml build
+docker-compose -f docker-compose.yml build
 
 ```
 
@@ -53,7 +53,7 @@ Finally, bring up the services
 
 ```bash
 
-docker-compose -f docker-compose-replica.yml up
+docker-compose -f docker-compose.yml up
 
 ```
 
