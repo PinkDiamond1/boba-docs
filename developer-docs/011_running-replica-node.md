@@ -25,7 +25,7 @@ The [boba_community/boba-node](https://github.com/omgnetwork/optimism-v2/tree/de
 **Open a terminal window**. Clone the project and install needed dependencies:
 
 ```bash
-$ git clone git@github.com:omgnetwork/optimism-v2.git
+$ git clone https://github.com/omgnetwork/optimism-v2.git
 $ cd optimism-v2
 $ yarn install
 $ yarn build
