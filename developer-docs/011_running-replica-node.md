@@ -26,12 +26,11 @@ The [boba_community/boba-node](https://github.com/omgnetwork/optimism-v2/tree/de
 
 ```bash
 $ git clone https://github.com/omgnetwork/optimism-v2.git
-$ cd optimism-v2
-$ yarn install
-$ yarn build
+$ cd boba_community/boba-node
+$ docker compose pull
 ```
 
-Then, add your Infura key to `boba_community/boba-node/docker-compose.yaml`. If you do not have an Infura key, you can obtain one for free from [Infura](https://infura.io). 
+Then, add your Infura key to `boba_community/boba-node/docker-compose.yaml`. If you do not have an Infura key, you can obtain one for free from [Infura](https://infura.io) or any other node provider.
 
 ```bash
 x-l1_rpc_dtl: &l1_rpc_dtl
@@ -41,20 +40,18 @@ x-l1_rpc_geth: &l1_rpc_geth
   ETH1_HTTP: 'https://mainnet.infura.io/v3/YOUR_INFURA_KEY'
 ```
 
-Next, build the packages:
+Bring up the services:
 
 ```bash
 
-docker-compose -f docker-compose.yml build
+docker-compose up
 
 ```
 
-Finally, bring up the services
+The system will start and the `Replica L2 Geth` will begin to sync with the Boba L2. **The sync process can take 1/2 hour to complete**. During the sync, you will see the Replica gradually catch up with the Boba L2. Once it has synced up with the Boba L2, you can use the replica for rpc reads and writes. There will be occasional updates to both services. You can update them by running:
 
 ```bash
-
-docker-compose -f docker-compose.yml up
-
+docker compose pull
 ```
 
-The system will start and the `Replica L2 Geth` will begin to sync with the Boba L2. **The sync process can take 1/2 hour to complete**. During the sync, you will see the Replica gradually catch up with the Boba L2. Once it has synced up with the Boba L2, you can use the replica for rpc reads.
+and bringing the services up again. We suggest you keep the storage volume of the replica mounted on the host. The replica stores its data in `/root/.ethereum/`.
