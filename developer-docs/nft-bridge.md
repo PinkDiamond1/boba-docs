@@ -92,7 +92,7 @@ await tx.wait()
 
 ### Native L2 NFT
 
-The L2 NFT creator should deploy [L1StandardERC721](https://github.com/omgnetwork/optimism-v2/tree/develop/packages/boba/contracts/contracts/standards) on the Boba Network.
+The L2 NFT creator should deploy [L1StandardERC721](https://github.com/omgnetwork/optimism-v2/tree/develop/packages/boba/contracts/contracts/standards) on Ethereum
 
 ```
 const Factory__L2StandardERC721 = new ethers.ContractFactory(
