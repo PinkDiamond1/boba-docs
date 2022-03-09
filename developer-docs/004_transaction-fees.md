@@ -6,7 +6,7 @@ description: Learn how transaction fees are calculated in Boba Network
 
 ## Transaction Fees in Boba Network <a id="frontmatter-title"></a>
 
-This page refers to the **new** state of Boba Network after the gas hard fork on Mainnet and Rinkeby.
+This page refers to the **new** state of Boba Network after the gas hard fork on Boba Mainnet and Rinkeby.
 
 ### Fees in a nutshell <a id="fees-in-a-nutshell"></a>
 
