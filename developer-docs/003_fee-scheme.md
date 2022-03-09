@@ -8,7 +8,7 @@ description: Fee scheme in Boba Network
 
 This page refers to the **new** state of Boba Network after the gas hard fork on Boba Mainnet and Rinkeby. The gas hard fork is active at block 400,000 on Boba Mainnet and starts from block 0 on Boba Rinkeby.
 
-You can see how the fee is calculated and deducted [here](004_transaction-fees-ovm-3.0.md).
+You can see how the fee is calculated and deducted [here](004_transaction-fees.md).
 
 ### For backend developers: <a href="for-backend-developers" id="for-backend-developers"></a>
 
