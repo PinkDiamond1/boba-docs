@@ -2,6 +2,7 @@
 
 * [Boba Network](README.md)
 * [Developer Docs](developer-docs/README.md)
+  * [Getting Started](developer-docs/getting-started.md)
   * [Exchange Integration](developer-docs/exchange-integration.md)
   * [Basic Operations Examples](developer-docs/001\_example-code-basic-ops.md)
   * [Contract Deployment Examples](developer-docs/002\_example-contract-deployments.md)
